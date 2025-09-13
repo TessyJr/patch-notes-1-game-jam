@@ -20,5 +20,5 @@ MonoBehaviour:
   WrongOffset: 0
   GravityFlip: 0
   LightingIssue: 0
-  QualityChange: 0
+  QualityChange: 1
   GlitchyWorld: 0

@@ -236,7 +236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
-  enableFrameDropMechanic: 0
   frameDropInterval: 1
   frameDropDuration: 0.5
   dropToFPS: 5
@@ -251,6 +250,10 @@ MonoBehaviour:
   - {fileID: 1309476585}
   - {fileID: 192531790}
   - {fileID: 1158038199}
+  urpAsset: {fileID: 0}
+  stepInterval: 0.75
+  stepAmount: 0.1
+  minRenderScale: 0.1
 --- !u!212 &1844712169 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7225283163248167059, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
@@ -330,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 2121936724}
     - target: {fileID: 4724084791965821388, guid: cc25cc529b4df499a9b015d3f93df1a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.78343964
+      value: 0.7826958
       objectReference: {fileID: 0}
     - target: {fileID: 4724084791965821388, guid: cc25cc529b4df499a9b015d3f93df1a3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -348,10 +351,6 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 2144306138}
-    - target: {fileID: 5248032689160660483, guid: cc25cc529b4df499a9b015d3f93df1a3, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 5.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7889372690835462488, guid: cc25cc529b4df499a9b015d3f93df1a3, type: 3}
       propertyPath: m_Name
       value: Camera
