@@ -20,9 +20,14 @@ public class ErrorManager : MonoBehaviour
 
     [Header("Quality Change Error Settings")]
     [SerializeField] private UniversalRenderPipelineAsset urpAsset;
-    [SerializeField] private float stepInterval = 0.75f;       // how often to step down (seconds)
-    [SerializeField] private float stepAmount = 0.1f;       // how much to reduce per step
-    [SerializeField] private float minRenderScale = 0.1f;   // minimum allowed scale
+    [SerializeField] private float qualityStepInterval = 0.75f;
+    [SerializeField] private float qualityStepAmount = 0.1f;
+    [SerializeField] private float minRenderScale = 0.1f;
+
+    [Header("Gravity Flip Error Settings")]
+    [SerializeField] private Rigidbody2D playerRigidbody;
+    [SerializeField] private Transform playerTransform;
+    [SerializeField] private float gravityFlipInterval = 1f;
 
     private void Awake()
     {
@@ -52,6 +57,11 @@ public class ErrorManager : MonoBehaviour
         {
             urpAsset.renderScale = 1f;
         }
+
+        if (_worldSettingSO.GravityFlip)
+        {
+            StartCoroutine(GravityFlipRoutine());
+        }
     }
 
     private IEnumerator FrameDropRoutine()
@@ -79,11 +89,30 @@ public class ErrorManager : MonoBehaviour
 
         while (currentScale > minRenderScale)
         {
-            yield return new WaitForSeconds(stepInterval);
+            yield return new WaitForSeconds(qualityStepInterval);
 
-            currentScale -= stepAmount;
+            currentScale -= qualityStepAmount;
             SetRenderScale(currentScale);
         }
     }
-}
 
+    private IEnumerator GravityFlipRoutine()
+    {
+        while (_worldSettingSO.GravityFlip)
+        {
+            yield return new WaitForSeconds(gravityFlipInterval);
+
+            if (playerRigidbody != null)
+            {
+                playerRigidbody.gravityScale *= -1f;
+            }
+
+            if (playerTransform != null)
+            {
+                Vector3 scale = playerTransform.localScale;
+                scale.y *= -1f;
+                playerTransform.localScale = scale;
+            }
+        }
+    }
+}

@@ -251,9 +251,12 @@ MonoBehaviour:
   - {fileID: 192531790}
   - {fileID: 1158038199}
   urpAsset: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
-  stepInterval: 0.75
-  stepAmount: 0.1
+  qualityStepInterval: 0.75
+  qualityStepAmount: 0.1
   minRenderScale: 0.1
+  playerRigidbody: {fileID: 6210029466929118232}
+  playerTransform: {fileID: 2144306138}
+  gravityFlipInterval: 1
 --- !u!212 &1844712169 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7225283163248167059, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
@@ -6025,6 +6028,10 @@ PrefabInstance:
       value: -40000000
       objectReference: {fileID: 0}
     - target: {fileID: 4966363737985313286, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+      propertyPath: m_GeometryType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966363737985313286, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -11078,6 +11085,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
+--- !u!50 &6210029466929118232 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3440922304130748083, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
+  m_PrefabInstance: {fileID: 6210029466929118231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
