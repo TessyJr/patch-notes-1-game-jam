@@ -352,7 +352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 4
   moveSpeed: 1
-  waitTime: 2
+  waitTime: 1
 --- !u!1 &1842124006568368604
 GameObject:
   m_ObjectHideFlags: 0
