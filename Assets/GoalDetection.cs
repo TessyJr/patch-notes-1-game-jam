@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoalDetector : MonoBehaviour
+public class GoalDetection : MonoBehaviour
 {
     public float restartDelay = 1f;
 
