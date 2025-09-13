@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Tilemaps;
+using UnityEngine.Rendering.Universal;
 
 public class ErrorManager : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class ErrorManager : MonoBehaviour
     [SerializeField] private Material _glitchMaterial;
     [SerializeField] private SpriteRenderer[] _spriteRenderers;
     [SerializeField] private TilemapRenderer[] _tilemapRenderers;
+
+    [Header("Quality Change Error Settings")]
+    [SerializeField] private UniversalRenderPipelineAsset urpAsset;
+    [SerializeField] private float stepInterval = 1f;       // how often to step down (seconds)
+    [SerializeField] private float stepAmount = 0.1f;       // how much to reduce per step
+    [SerializeField] private float minRenderScale = 0.1f;   // minimum allowed scale
 
     private void Awake()
     {
@@ -36,6 +43,15 @@ public class ErrorManager : MonoBehaviour
                 _tilemapRenderer.material = _glitchMaterial;
             }
         }
+
+        if (_worldSettingSO.QualityChange)
+        {
+            StartCoroutine(QualityStepDownRoutine());
+        }
+        else
+        {
+            urpAsset.renderScale = 1f;
+        }
     }
 
     private IEnumerator FrameDropRoutine()
@@ -48,6 +64,25 @@ public class ErrorManager : MonoBehaviour
             yield return new WaitForSeconds(frameDropDuration);
 
             Application.targetFrameRate = -1;
+        }
+    }
+
+    public void SetRenderScale(float scale)
+    {
+        urpAsset.renderScale = Mathf.Clamp(scale, minRenderScale, 1f);
+    }
+
+    private IEnumerator QualityStepDownRoutine()
+    {
+        float currentScale = 1f;
+        SetRenderScale(currentScale);
+
+        while (currentScale > minRenderScale)
+        {
+            yield return new WaitForSeconds(stepInterval);
+
+            currentScale -= stepAmount;
+            SetRenderScale(currentScale);
         }
     }
 }
