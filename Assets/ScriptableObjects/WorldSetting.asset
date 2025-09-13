@@ -15,7 +15,7 @@ MonoBehaviour:
   MissingTexture: 0
   PhysicsGoneWild: 0
   UnsteadyHands: 0
-  InconsistentFriction: 0
+  InconsistentFriction: 1
   FPSDrop: 0
   WrongOffset: 0
   GravityFlip: 0
