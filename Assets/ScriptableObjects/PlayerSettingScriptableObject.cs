@@ -15,6 +15,7 @@ public class PlayerSettingScriptableObject : ScriptableObject
     public bool ShiftedHitbox = false;
     public bool HowToMove = false;
     public bool GlitchyTexture = false;
+    public bool InputLag = false;
 
     public void Reset()
     {
@@ -25,6 +26,7 @@ public class PlayerSettingScriptableObject : ScriptableObject
         ShiftedHitbox = false;
         HowToMove = false;
         GlitchyTexture = false;
+        InputLag = false;
     }
 }
 
