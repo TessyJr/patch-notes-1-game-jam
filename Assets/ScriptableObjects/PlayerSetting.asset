@@ -17,6 +17,6 @@ MonoBehaviour:
   WhatIsGround: 0
   FPSDrop: 0
   ShiftedHitbox: 0
-  HowToMove: 0
+  BrokenControl: 0
   GlitchyTexture: 0
   InputLag: 0
