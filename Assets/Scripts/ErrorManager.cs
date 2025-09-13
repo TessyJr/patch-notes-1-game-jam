@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Tilemaps;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 using Cinemachine;
 
 public class ErrorManager : MonoBehaviour
@@ -33,6 +34,11 @@ public class ErrorManager : MonoBehaviour
     [Header("Unsteady Hands Error Settings")]
     [SerializeField] private CinemachineVirtualCamera _cinemachine;
     private CinemachineBasicMultiChannelPerlin _noise;
+
+    [Header("Lighting Issue Error Settings")]
+    [SerializeField] private Image blackScreen;
+    [SerializeField] private float minLightingIssueInterval = 1f;
+    [SerializeField] private float maxLightingIssueInterval = 2f;
 
     private void Awake()
     {
@@ -66,6 +72,11 @@ public class ErrorManager : MonoBehaviour
         if (_worldSettingSO.GravityFlip)
         {
             StartCoroutine(GravityFlipRoutine());
+        }
+
+        if (_worldSettingSO.LightingIssue)
+        {
+            StartCoroutine(LightingIssueRoutine());
         }
 
         if (_worldSettingSO.UnsteadyHands)
@@ -124,6 +135,42 @@ public class ErrorManager : MonoBehaviour
                 playerTransform.localScale = scale;
             }
         }
+    }
+
+    private IEnumerator LightingIssueRoutine()
+    {
+        while (_worldSettingSO.LightingIssue)
+        {
+            float randomInterval = Random.Range(minLightingIssueInterval, maxLightingIssueInterval);
+            yield return new WaitForSeconds(randomInterval);
+
+            if (blackScreen.color.a > 0.5f) // Currently ON → flicker OFF
+            {
+                yield return StartCoroutine(FlickerSequence(new float[] { 0.25f, 0f, 0.5f, 0f, 0.75f, 1f }));
+                SetAlpha(0f); // final state = OFF (clear screen)
+            }
+            else // Currently OFF → flicker ON
+            {
+                yield return StartCoroutine(FlickerSequence(new float[] { 1f, 0f, 0.75f, 0f, 0.5f, 0f, 0.25f, 0f }));
+                SetAlpha(1f); // final state = ON (fully black)
+            }
+        }
+    }
+
+    private IEnumerator FlickerSequence(float[] alphaSteps)
+    {
+        foreach (float alpha in alphaSteps)
+        {
+            SetAlpha(alpha);
+            yield return new WaitForSeconds(0.05f); // flicker speed
+        }
+    }
+
+    private void SetAlpha(float alpha)
+    {
+        Color c = blackScreen.color;
+        c.a = alpha;
+        blackScreen.color = c;
     }
 
     private void UnsteadyHands()
