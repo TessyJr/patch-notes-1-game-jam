@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Tilemaps;
 using UnityEngine.Rendering.Universal;
+using Cinemachine;
 
 public class ErrorManager : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class ErrorManager : MonoBehaviour
     [SerializeField] private Rigidbody2D playerRigidbody;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float gravityFlipInterval = 1f;
+
+    [Header("Unsteady Hands Error Settings")]
+    [SerializeField] private CinemachineVirtualCamera _cinemachine;
+    private CinemachineBasicMultiChannelPerlin _noise;
 
     private void Awake()
     {
@@ -61,6 +66,11 @@ public class ErrorManager : MonoBehaviour
         if (_worldSettingSO.GravityFlip)
         {
             StartCoroutine(GravityFlipRoutine());
+        }
+
+        if (_worldSettingSO.UnsteadyHands)
+        {
+            UnsteadyHands();
         }
     }
 
@@ -114,5 +124,13 @@ public class ErrorManager : MonoBehaviour
                 playerTransform.localScale = scale;
             }
         }
+    }
+
+    private void UnsteadyHands()
+    {
+        _noise = _cinemachine.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        _noise.m_PivotOffset = new(5, 5, 5);
+        _noise.m_AmplitudeGain = 5f;
+        _noise.m_FrequencyGain = 5f;
     }
 }
