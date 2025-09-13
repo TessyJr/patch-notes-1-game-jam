@@ -19,3 +19,4 @@ MonoBehaviour:
   ShiftedHitbox: 0
   HowToMove: 0
   GlitchyTexture: 0
+  InputLag: 0
