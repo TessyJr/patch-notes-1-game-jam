@@ -36,5 +36,6 @@ public class PlayerAnimation : MonoBehaviour
         }
 
         _wasGrounded = _movement.IsGrounded;
+        _animator.SetBool("IsGrounded", _movement.IsGrounded);
     }
 }
