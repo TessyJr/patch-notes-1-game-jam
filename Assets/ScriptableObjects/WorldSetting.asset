@@ -18,7 +18,7 @@ MonoBehaviour:
   InconsistentFriction: 0
   FPSDrop: 0
   WrongOffset: 0
-  GravityFlip: 1
+  GravityFlip: 0
   LightingIssue: 0
   QualityChange: 0
   GlitchyWorld: 0
