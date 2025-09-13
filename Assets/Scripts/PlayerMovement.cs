@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,9 +10,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask _groundLayer;
 
+    private Vector2 _moveDirection;
     private bool _isGrounded;
 
-    private Vector2 _moveDirection;
+    public bool IsGrounded => _isGrounded;
+    public Vector2 Velocity => _rb.velocity;
+    public bool IsMoving => Mathf.Abs(_moveDirection.x) > 0.1f;
 
     void Update()
     {
@@ -24,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 move = _moveDirection * _movementSpeed;
-
         _rb.velocity = new Vector2(move.x, _rb.velocity.y);
     }
 
