@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     private static WaitForSeconds _waitForSeconds1 = new WaitForSeconds(0.6f);
     [SerializeField] private Rigidbody2D _rb;
-    [SerializeField] private float _movementSpeed = 5f;
-    [SerializeField] private float _jumpForce = 5f;
+    [SerializeField] private float _movementSpeed = 4f;
+    [SerializeField] private float _jumpForce = 8f;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask _groundLayer;
@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 _moveDirection;
     private bool _isGrounded;
+    private bool _wasGrounded;
     private Vector2 _externalForce;
+    private float _originalMovementSpeed;
 
     public bool IsGrounded => _isGrounded;
     public Vector2 Velocity => _rb.velocity;
@@ -24,6 +26,14 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
+
+        // detect landing
+        if (_isGrounded && !_wasGrounded)
+        {
+            RestoreMovementSpeed();
+        }
+
+        _wasGrounded = _isGrounded;
     }
 
     private void FixedUpdate()
@@ -82,11 +92,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
+        // cache speed before modifying
+        _originalMovementSpeed = _movementSpeed;
+
+        // force jump speed
+        _movementSpeed = 4f;
+
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+    }
+
+    private void RestoreMovementSpeed()
+    {
+        // restore speed only if it was changed
+        if (_movementSpeed == 4f)
+        {
+            _movementSpeed = _originalMovementSpeed;
+        }
     }
 
     private bool CanJump()
     {
         return _isGrounded || _playerSettingSO.WhatIsGround;
     }
+
+    public void SetMovementSpeed(float movementSpeed) => _movementSpeed = movementSpeed;
 }

@@ -40,6 +40,12 @@ public class ErrorManager : MonoBehaviour
     [SerializeField] private float minLightingIssueInterval = 1f;
     [SerializeField] private float maxLightingIssueInterval = 2f;
 
+    [Header("Inconsistent Friction Error Settings")]
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private float inconsistentFrictionInterval = 1f;
+    [SerializeField] private float minSpeed = 0f;
+    [SerializeField] private float maxSpeed = 4f;
+
     private void Awake()
     {
         if (_worldSettingSO.FPSDrop)
@@ -82,6 +88,15 @@ public class ErrorManager : MonoBehaviour
         if (_worldSettingSO.UnsteadyHands)
         {
             UnsteadyHands();
+        }
+
+        if (_worldSettingSO.InconsistentFriction)
+        {
+            StartCoroutine(inconsistentFrictionRoutine());
+        }
+        else
+        {
+            // phyiscsMaterial.Speed = 0f;
         }
     }
 
@@ -179,5 +194,19 @@ public class ErrorManager : MonoBehaviour
         _noise.m_PivotOffset = new(5, 5, 5);
         _noise.m_AmplitudeGain = 5f;
         _noise.m_FrequencyGain = 5f;
+    }
+
+    private IEnumerator inconsistentFrictionRoutine()
+    {
+        while (_worldSettingSO.InconsistentFriction)
+        {
+            yield return new WaitForSeconds(inconsistentFrictionInterval);
+
+            if (playerMovement != null && playerMovement.IsGrounded)
+            {
+                float randomSpeed = Random.Range(minSpeed, maxSpeed);
+                playerMovement.SetMovementSpeed(randomSpeed);
+            }
+        }
     }
 }
