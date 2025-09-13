@@ -9,7 +9,7 @@ public class PlayerSettingScriptableObject : ScriptableObject
     public bool WhatIsGround = false;
     public bool FPSDrop = false;
     public bool ShiftedHitbox = false;
-    public bool HowToMove = false;
+    public bool BrokenControl = false;
     public bool GlitchyTexture = false;
     public bool InputLag = false;
 
@@ -20,7 +20,7 @@ public class PlayerSettingScriptableObject : ScriptableObject
         WhatIsGround = false;
         FPSDrop = false;
         ShiftedHitbox = false;
-        HowToMove = false;
+        BrokenControl = false;
         GlitchyTexture = false;
         InputLag = false;
     }
