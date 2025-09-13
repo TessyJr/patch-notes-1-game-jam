@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358d9afca3e184573a041509d6deaf48, type: 3}
+  m_Name: PlayerSetting
+  m_EditorClassIdentifier: 
+  WrongAnimation: 0
+  SpeedDemon: 0
+  WhatIsGround: 0
+  FPSDrop: 0
+  ShiftedHitbox: 0
+  HowToMove: 0
+  GlitchyTexture: 0
