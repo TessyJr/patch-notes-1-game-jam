@@ -122,6 +122,21 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!483693784 &92157358 stripped
+TilemapRenderer:
+  m_CorrespondingSourceObject: {fileID: 6216829146443148547, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+  m_PrefabInstance: {fileID: 4637079081611488830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &145252897 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9020536285254766846, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+  m_PrefabInstance: {fileID: 4637079081611488830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!483693784 &192531790 stripped
+TilemapRenderer:
+  m_CorrespondingSourceObject: {fileID: 5849302585397419782, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+  m_PrefabInstance: {fileID: 4637079081611488830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &490525320
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +181,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!483693784 &1158038199 stripped
+TilemapRenderer:
+  m_CorrespondingSourceObject: {fileID: 9107174154180135656, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+  m_PrefabInstance: {fileID: 4637079081611488830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!483693784 &1309476585 stripped
+TilemapRenderer:
+  m_CorrespondingSourceObject: {fileID: 4185334471054271402, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+  m_PrefabInstance: {fileID: 4637079081611488830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1805418676
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +202,7 @@ GameObject:
   - component: {fileID: 1805418677}
   - component: {fileID: 1805418678}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: ErrorManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,14 +235,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ad22ce39c914d31b3d5139d5da3792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetFPS: 60
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
   enableFrameDropMechanic: 0
   frameDropInterval: 1
   frameDropDuration: 0.5
   dropToFPS: 5
+  _glitchMaterial: {fileID: 2100000, guid: 7c0d0e42429ab40ee9d23d301b02454c, type: 2}
+  _spriteRenderers:
+  - {fileID: 1844712169}
+  - {fileID: 145252897}
+  _tilemapRenderers:
+  - {fileID: 2121936727}
+  - {fileID: 1914367106}
+  - {fileID: 92157358}
+  - {fileID: 1309476585}
+  - {fileID: 192531790}
+  - {fileID: 1158038199}
+--- !u!212 &1844712169 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7225283163248167059, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
+  m_PrefabInstance: {fileID: 6210029466929118231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!483693784 &1914367106 stripped
+TilemapRenderer:
+  m_CorrespondingSourceObject: {fileID: 6343849471218566948, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+  m_PrefabInstance: {fileID: 4637079081611488830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!66 &2121936724 stripped
 CompositeCollider2D:
   m_CorrespondingSourceObject: {fileID: 4966363737985313286, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
+  m_PrefabInstance: {fileID: 4637079081611488830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!483693784 &2121936727 stripped
+TilemapRenderer:
+  m_CorrespondingSourceObject: {fileID: 6276425856906176047, guid: f62b9a68c69df4c128cf1c99a14a161d, type: 3}
   m_PrefabInstance: {fileID: 4637079081611488830}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2144306138 stripped
