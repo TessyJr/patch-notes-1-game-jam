@@ -377,10 +377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d841b11a34a40148d708489bd65596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemapRenderer: {fileID: 9107174154180135656}
-  _tilemap: {fileID: 0}
+  _tilemap: {fileID: 2934310877404376992}
   _spriteRenderer: {fileID: 0}
-  _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!114 &358926599513373076
 MonoBehaviour:
@@ -5589,10 +5588,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d841b11a34a40148d708489bd65596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemapRenderer: {fileID: 0}
   _tilemap: {fileID: 1296795532204584931}
   _spriteRenderer: {fileID: 0}
-  _material: {fileID: 0}
+  _noMaterialTile: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!1 &6455404571657077509
 GameObject:
@@ -5713,10 +5711,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d841b11a34a40148d708489bd65596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemapRenderer: {fileID: 0}
   _tilemap: {fileID: 0}
   _spriteRenderer: {fileID: 9020536285254766846}
-  _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _noMaterialTile: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!1 &7234365857156097363
 GameObject:
@@ -6869,10 +6866,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d841b11a34a40148d708489bd65596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemapRenderer: {fileID: 6216829146443148547}
-  _tilemap: {fileID: 0}
+  _tilemap: {fileID: 7474989102650242341}
   _spriteRenderer: {fileID: 0}
-  _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!114 &3789309710374999015
 MonoBehaviour:
@@ -7427,10 +7423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d841b11a34a40148d708489bd65596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemapRenderer: {fileID: 5849302585397419782}
-  _tilemap: {fileID: 0}
+  _tilemap: {fileID: 3568691368296195722}
   _spriteRenderer: {fileID: 0}
-  _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!114 &3176410097787348235
 MonoBehaviour:
@@ -7823,10 +7818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d841b11a34a40148d708489bd65596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemapRenderer: {fileID: 4185334471054271402}
-  _tilemap: {fileID: 0}
+  _tilemap: {fileID: 2257446902134095213}
   _spriteRenderer: {fileID: 0}
-  _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!114 &7778170823678961717
 MonoBehaviour:
@@ -9042,8 +9036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d841b11a34a40148d708489bd65596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemapRenderer: {fileID: 6343849471218566948}
-  _tilemap: {fileID: 0}
+  _tilemap: {fileID: 8381610024870605277}
   _spriteRenderer: {fileID: 0}
-  _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
