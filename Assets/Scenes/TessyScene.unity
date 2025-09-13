@@ -250,7 +250,7 @@ MonoBehaviour:
   - {fileID: 1309476585}
   - {fileID: 192531790}
   - {fileID: 1158038199}
-  urpAsset: {fileID: 0}
+  urpAsset: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
   stepInterval: 0.75
   stepAmount: 0.1
   minRenderScale: 0.1

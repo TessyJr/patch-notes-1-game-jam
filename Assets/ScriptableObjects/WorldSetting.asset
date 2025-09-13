@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: WorldSetting
   m_EditorClassIdentifier: 
   MissingTexture: 0
-  PhysicsGoneWild: 1
+  PhysicsGoneWild: 0
   UnsteadyHands: 0
   InconsistentFriction: 0
   FPSDrop: 0
   WrongOffset: 0
   GravityFlip: 0
   LightingIssue: 0
-  QualityChange: 1
+  QualityChange: 0
   GlitchyWorld: 0
