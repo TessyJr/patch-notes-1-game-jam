@@ -863,7 +863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: world errors
+  m_text: player errors
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2717,6 +2717,10 @@ MonoBehaviour:
   blackScreen: {fileID: 0}
   minLightingIssueInterval: 1
   maxLightingIssueInterval: 2
+  playerMovement: {fileID: 0}
+  inconsistentFrictionInterval: 1
+  minSpeed: 0
+  maxSpeed: 4
 --- !u!4 &767980297
 Transform:
   m_ObjectHideFlags: 0
@@ -3385,7 +3389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Make the sh*ttiest game!
+  m_text: Make the crappiest game!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
