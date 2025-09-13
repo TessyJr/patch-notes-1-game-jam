@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3972043358791987583}
   - component: {fileID: 6396503231698168562}
   - component: {fileID: 9197203057339039410}
+  - component: {fileID: 358926599513373076}
   m_Layer: 6
   m_Name: Platform
   m_TagString: Ground
@@ -380,6 +381,20 @@ MonoBehaviour:
   _tilemap: {fileID: 0}
   _spriteRenderer: {fileID: 0}
   _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+--- !u!114 &358926599513373076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301988220162474623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4c7fff9cba438e869839cde03f382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 7457047239315609401}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!1 &1842124006568368604
 GameObject:
@@ -5718,6 +5733,7 @@ GameObject:
   - component: {fileID: 4882623342995770497}
   - component: {fileID: 4177958664031471557}
   - component: {fileID: 3155699373271474766}
+  - component: {fileID: 3789309710374999015}
   m_Layer: 6
   m_Name: Wall
   m_TagString: Ground
@@ -6858,6 +6874,20 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 0}
   _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+--- !u!114 &3789309710374999015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7234365857156097363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4c7fff9cba438e869839cde03f382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 4882623342995770497}
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!1 &7706153660260362964
 GameObject:
   m_ObjectHideFlags: 0
@@ -6873,6 +6903,7 @@ GameObject:
   - component: {fileID: 8703527513427054361}
   - component: {fileID: 2198850703685322575}
   - component: {fileID: 561584482093159915}
+  - component: {fileID: 3176410097787348235}
   m_Layer: 0
   m_Name: Traps
   m_TagString: Trap
@@ -7401,6 +7432,20 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 0}
   _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+--- !u!114 &3176410097787348235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706153660260362964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4c7fff9cba438e869839cde03f382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 8703527513427054361}
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!1 &7837781149297257789
 GameObject:
   m_ObjectHideFlags: 0
@@ -7416,6 +7461,7 @@ GameObject:
   - component: {fileID: 5686759158175594839}
   - component: {fileID: 6290169163828081682}
   - component: {fileID: 7831980677342528597}
+  - component: {fileID: 7778170823678961717}
   m_Layer: 6
   m_Name: Goal
   m_TagString: Goal
@@ -7781,6 +7827,20 @@ MonoBehaviour:
   _tilemap: {fileID: 0}
   _spriteRenderer: {fileID: 0}
   _material: {fileID: 2100000, guid: 9cfb9c94b4edd4547a8f6c88ffdd86f7, type: 2}
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+--- !u!114 &7778170823678961717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7837781149297257789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c4c7fff9cba438e869839cde03f382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 5686759158175594839}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!1 &8374038638482490929
 GameObject:
