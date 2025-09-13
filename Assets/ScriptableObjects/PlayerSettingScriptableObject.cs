@@ -5,12 +5,10 @@ using UnityEngine;
 public class PlayerSettingScriptableObject : ScriptableObject
 {
     public bool WrongAnimation = false;
-    public bool SpeedDemon = false;
     public bool WhatIsGround = false;
-    public bool FPSDrop = false;
     public bool ShiftedHitbox = false;
+    public bool SpeedDemon = false;
     public bool BrokenControl = false;
-    public bool GlitchyTexture = false;
     public bool InputLag = false;
 
     public void Reset()
@@ -18,10 +16,8 @@ public class PlayerSettingScriptableObject : ScriptableObject
         WrongAnimation = false;
         SpeedDemon = false;
         WhatIsGround = false;
-        FPSDrop = false;
         ShiftedHitbox = false;
         BrokenControl = false;
-        GlitchyTexture = false;
         InputLag = false;
     }
 }
