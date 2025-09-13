@@ -259,6 +259,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1629161429 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5248032689160660483, guid: cc25cc529b4df499a9b015d3f93df1a3, type: 3}
+  m_PrefabInstance: {fileID: 1153971199503671003}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1722952046
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +438,7 @@ MonoBehaviour:
   playerRigidbody: {fileID: 6210029466929118232}
   playerTransform: {fileID: 2144306138}
   gravityFlipInterval: 1
+  _cinemachine: {fileID: 1629161429}
   blackScreen: {fileID: 1949246605}
   minLightingIssueInterval: 1
   maxLightingIssueInterval: 2
