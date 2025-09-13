@@ -9,7 +9,7 @@ public class PlayerColliderShifter : MonoBehaviour
     {
         if (_playerSettingSO.ShiftedHitbox)
         {
-            transform.localPosition = new(-1, -0.5f, 0);
+            transform.localPosition = new(-1.5f, -0.5f, 0);
         }
     }
 }
