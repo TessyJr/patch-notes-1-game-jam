@@ -4,7 +4,7 @@
         PhysicsGoneWild,
         UnsteadyHands,
         InconsistentFriction,
-        FPSDrop,
+        FpsDrop,
         WrongOffset,
         GravityFlip,
         LightingIssue,
