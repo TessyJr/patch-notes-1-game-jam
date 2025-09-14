@@ -209,7 +209,7 @@ public class AchievementDetectionController : MonoBehaviour
     {
         if (_achivementSO.RageQuitter) return;
 
-        if (_counterSO.DeathCounter >= 1 && _counterSO._quitThrooughPause == true)
+        if (_counterSO.DeathCounter >= 1 && _counterSO.QuitThrooughPause == true)
         {
             _achivementSO.RageQuitter = true;
             _popupManager.ShowPopup(_achievements.Find(a => a.name == "RageQuitterAchievement").GetName, _achievements.Find(a => a.name == "RageQuitterAchievement").GetIcon);
