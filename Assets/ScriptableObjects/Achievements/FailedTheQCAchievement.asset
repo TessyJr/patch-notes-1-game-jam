@@ -15,6 +15,6 @@ MonoBehaviour:
   achievementName: Failed the QC
   description: Implement any error(s)
   clueText: "Whatever\u2019s fine, just make a crappy game!"
-  isUnlocked: 0
-  icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  isUnlocked: 1
+  icon: {fileID: 1189637409, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}

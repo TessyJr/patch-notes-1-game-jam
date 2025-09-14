@@ -15,6 +15,6 @@ MonoBehaviour:
   achievementName: Bad Graphics
   description: Reach the lowest graphic quality
   clueText: "I surely don\u2019t miss those 144p videos."
-  isUnlocked: 0
-  icon: {fileID: -1957566533336573219, guid: fc834c17a763e0141b0fec5d598e279b, type: 3}
+  isUnlocked: 1
+  icon: {fileID: -1618093876, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}

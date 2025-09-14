@@ -15,6 +15,6 @@ MonoBehaviour:
   achievementName: Potato PC
   description: Finish the level with FPS Drop + Input Lag
   clueText: I hate it when these two things happen in online games!
-  isUnlocked: 0
-  icon: {fileID: 6077175626366064899, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  isUnlocked: 1
+  icon: {fileID: -2073231145, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}

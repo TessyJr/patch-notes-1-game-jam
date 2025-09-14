@@ -33,11 +33,11 @@ public class AchievementManager : MonoBehaviour
     private void OnAchievementChange(AchievementItem achievement)
     {
         Achievement achievementSO = achievement.GetAchievementSO;
-        achievement.SetIconImageColor(achievementSO.GetIsUnlocked ? Color.white : Color.black);
+        achievement.SetIconImageColor(achievementSO.GetIsUnlocked ? Color.white : new Color(0.25f, 0.25f, 0.25f));
         achievementText.text = achievementSO.GetName;
         clueText.text = achievementSO.GetClueText;
         iconImage.sprite = achievementSO.GetIcon;
-        iconImage.color = achievementSO.GetIsUnlocked ? Color.white : Color.black;
+        iconImage.color = achievementSO.GetIsUnlocked ? Color.white : new Color(0.25f, 0.25f, 0.25f);
         if (achievementSO.GetIsUnlocked)
         {
             descriptionText.text = achievementSO.GetDescription;

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052e26f1872034707949715c1f94ab87, type: 3}
   m_Name: YoureNotSupposedToGoThereAchievement
   m_EditorClassIdentifier: 
-  achievementName: "You\u2019re Not Supposed To Go There!"
+  achievementName: "you\u2019re Not Supposed To Go There!"
   description: Go outside the level
   clueText: "There should\u2019ve been a barrier to prevent any access\u2026 yet
     here I am."
-  isUnlocked: 0
-  icon: {fileID: 4121880872312635667, guid: ffc9f271fad56c243a45f100b9dc6778, type: 3}
+  isUnlocked: 1
+  icon: {fileID: -2126636022, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}

@@ -15,6 +15,6 @@ MonoBehaviour:
   achievementName: No Control
   description: Finish the level with Broken Control
   clueText: "Hmm, that\u2019s weird... Did I assign the wrong keys again?"
-  isUnlocked: 0
-  icon: {fileID: -4784554060977693878, guid: a766483fddea6b64f827838e089d1970, type: 3}
+  isUnlocked: 1
+  icon: {fileID: -1616448317, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}
