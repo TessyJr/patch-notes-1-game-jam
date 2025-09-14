@@ -1,18 +1,19 @@
 using UnityEngine;
+using System.Linq;
 
 [CreateAssetMenu(fileName = "WorldSetting", menuName = "ScriptableObjectAssets/WorldSetting", order = 0)]
 public class WorldSettingScriptableObject : ScriptableObject
 {
-    public bool MissingTexture = false;
-    public bool PhysicsGoneWild = false;
-    public bool UnsteadyHands = false;
-    public bool InconsistentFriction = false;
-    public bool FPSDrop = false;
-    public bool WrongOffset = false;
-    public bool GravityFlip = false;
-    public bool LightingIssue = false;
-    public bool QualityChange = false;
-    public bool GlitchyWorld = false;
+    public bool MissingTexture;
+    public bool PhysicsGoneWild;
+    public bool UnsteadyHands;
+    public bool InconsistentFriction;
+    public bool FPSDrop;
+    public bool WrongOffset;
+    public bool GravityFlip;
+    public bool LightingIssue;
+    public bool QualityChange;
+    public bool GlitchyWorld;
 
     public void Reset()
     {
@@ -27,5 +28,19 @@ public class WorldSettingScriptableObject : ScriptableObject
         QualityChange = false;
         GlitchyWorld = false;
     }
+
+    public bool HasAny =>
+    new bool[] {
+        MissingTexture,
+        PhysicsGoneWild,
+        UnsteadyHands,
+        InconsistentFriction,
+        FPSDrop,
+        WrongOffset,
+        GravityFlip,
+        LightingIssue,
+        QualityChange,
+        GlitchyWorld
+    }.Any(b => b);
 }
 

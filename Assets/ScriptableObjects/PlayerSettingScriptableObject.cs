@@ -1,14 +1,15 @@
 using UnityEngine;
+using System.Linq;
 
 [CreateAssetMenu(fileName = "PlayerSetting", menuName = "ScriptableObjectAssets/PlayerSetting", order = 1)]
 public class PlayerSettingScriptableObject : ScriptableObject
 {
-    public bool WrongAnimation = false;
-    public bool WhatIsGround = false;
-    public bool ShiftedHitbox = false;
-    public bool SpeedDemon = false;
-    public bool BrokenControl = false;
-    public bool InputLag = false;
+    public bool WrongAnimation;
+    public bool WhatIsGround;
+    public bool ShiftedHitbox;
+    public bool SpeedDemon;
+    public bool BrokenControl;
+    public bool InputLag;
 
     public void Reset()
     {
@@ -19,5 +20,15 @@ public class PlayerSettingScriptableObject : ScriptableObject
         BrokenControl = false;
         InputLag = false;
     }
+
+    public bool HasAny =>
+    new bool[] {
+        WrongAnimation,
+        WhatIsGround,
+        ShiftedHitbox,
+        SpeedDemon,
+        BrokenControl,
+        InputLag
+    }.Any(b => b);
 }
 
