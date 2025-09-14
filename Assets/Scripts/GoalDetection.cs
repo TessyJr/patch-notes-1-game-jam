@@ -1,17 +1,20 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GoalDetection : MonoBehaviour
 {
+    [SerializeField] private ReachGoalCanvasManager _reachGoalCanvasManager;
     [SerializeField] private SceneGameManager _sceneGameManager;
-    public float restartDelay = 1f;
+    [SerializeField] private PlayerInput _playerInput;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Goal"))
         {
-            _sceneGameManager.ReachGoal();
+            _playerInput.actions.Disable();
 
-            // SceneGameManager.Instance.Exit();
+            _reachGoalCanvasManager.OpenCanvas();
+            _sceneGameManager.ReachGoal();
         }
     }
 }

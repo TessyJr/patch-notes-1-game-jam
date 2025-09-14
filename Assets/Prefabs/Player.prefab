@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 8090628776161540284}
   - component: {fileID: 3755205288005450853}
   - component: {fileID: 2051296284593821627}
+  - component: {fileID: 6061528467612679345}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -353,6 +354,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f6ac3e25-4e68-4cfb-ad90-befa60c23f01
     m_ActionName: PlayerMovement/Jump
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1831a804-1e72-421d-b0df-bb21171d365e
+    m_ActionName: PlayerMovement/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMovement
@@ -427,8 +432,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a58048cd5a5442a9d2c85a6c622515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _reachGoalCanvasManager: {fileID: 0}
   _sceneGameManager: {fileID: 0}
-  restartDelay: 1
+  _playerInputActionMap:
+    m_Name: Player Input
+    m_Id: 9f74b5a8-b00b-48f7-9234-af5aa4a32b27
+    m_Asset: {fileID: 0}
+    m_Actions: []
+    m_Bindings: []
 --- !u!114 &2051296284593821627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,3 +454,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerInputComponent: {fileID: 8574834330265058590}
   _playerSettingSO: {fileID: 11400000, guid: bdb9ea5e5e58c4b99af9d749ae10063e, type: 2}
+--- !u!114 &6061528467612679345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481308742861255197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d153500f9b91419188885585683692a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 8574834330265058590}
+  _pauseCanvasManager: {fileID: 0}
