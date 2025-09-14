@@ -6,18 +6,13 @@ public class SceneGameManager : MonoBehaviour
 {
     [SerializeField] private AchievementDetectionController _achievementDetectionController;
 
-    private bool _isGoalReached = false;
-
     void Awake()
     {
-        _isGoalReached = false;
         Time.timeScale = 1;
     }
 
     public void ReachGoal()
     {
-        _isGoalReached = true;
-
         _achievementDetectionController.CheckNotEnoughMoneyToHireArtist();
         _achievementDetectionController.CheckWhoNeedsPrecision();
         _achievementDetectionController.CheckSkippedPhysicsInHighSchool();
