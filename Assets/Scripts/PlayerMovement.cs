@@ -17,17 +17,24 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _groundCheckRadius = 0.4f;
     [SerializeField] private LayerMask _groundLayer;
 
+    [Header("Wall Checker Settings")]
+    [SerializeField] private Transform _wallCheck;
+    [SerializeField] private float _wallCheckRadius = 0.6f;
+    [SerializeField] private LayerMask _wallLayer;
+
     [Header("Scriptable Object Settings")]
     [SerializeField] private PlayerSettingScriptableObject _playerSettingSO;
 
     private Vector2 _moveDirection;
     private bool _isGrounded;
     private bool _wasGrounded;
+    private bool _isStickToWall;
     private Vector2 _externalForce;
     private float _originalMovementSpeed;
 
     public bool IsGrounded => _isGrounded;
     public Vector2 Velocity => _rb.velocity;
+    public bool IsStickToWall => _isStickToWall;
     public bool IsMoving => Mathf.Abs(_moveDirection.x) > 0.1f;
 
     void Awake()
@@ -37,9 +44,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        _isStickToWall = Physics2D.OverlapCircle(_wallCheck.position, _wallCheckRadius, _wallLayer);
+
         _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
 
         _wasGrounded = _isGrounded;
+
+        Debug.Log(_isStickToWall);
     }
 
     private void FixedUpdate()
