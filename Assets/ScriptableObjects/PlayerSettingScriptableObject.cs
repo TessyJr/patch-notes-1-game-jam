@@ -1,7 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerSetting", menuName = "PlayerSetting", order = 1)]
-
+[CreateAssetMenu(fileName = "PlayerSetting", menuName = "ScriptableObjectAssets/PlayerSetting", order = 1)]
 public class PlayerSettingScriptableObject : ScriptableObject
 {
     public bool WrongAnimation = false;
