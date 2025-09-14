@@ -43,8 +43,8 @@ public class ErrorManager : MonoBehaviour
     [Header("Inconsistent Friction Error Settings")]
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private float inconsistentFrictionInterval = 1f;
-    [SerializeField] private float minSpeed = 0f;
-    [SerializeField] private float maxSpeed = 4f;
+    [SerializeField] private float minFriction = 0f;
+    [SerializeField] private float maxFriction = 1f;
 
     private void Awake()
     {
@@ -204,8 +204,8 @@ public class ErrorManager : MonoBehaviour
 
             if (playerMovement != null && playerMovement.IsGrounded)
             {
-                float randomSpeed = Random.Range(minSpeed, maxSpeed);
-                playerMovement.SetMovementSpeed(randomSpeed);
+                float randomSpeed = Random.Range(minFriction, maxFriction);
+                playerMovement.SetFriction(randomSpeed);
             }
         }
     }
