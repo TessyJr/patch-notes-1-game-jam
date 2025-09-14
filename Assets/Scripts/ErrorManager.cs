@@ -131,28 +131,39 @@ public class ErrorManager : MonoBehaviour
             currentScale -= qualityStepAmount;
 
             _achivementDetectionController.CheckBadGraphics(currentScale);
-            
+
             SetRenderScale(currentScale);
         }
     }
 
     private IEnumerator GravityFlipRoutine()
     {
+        yield return new WaitForSeconds(gravityFlipInterval);
+
         while (_worldSettingSO.GravityFlip)
         {
+            yield return new WaitUntil(() => playerMovement.IsGrounded);
+
+            FlipGravity();
+
             yield return new WaitForSeconds(gravityFlipInterval);
 
-            if (playerRigidbody != null)
-            {
-                playerRigidbody.gravityScale *= -1f;
-            }
+            FlipGravity();
+        }
+    }
 
-            if (playerTransform != null)
-            {
-                Vector3 scale = playerTransform.localScale;
-                scale.y *= -1f;
-                playerTransform.localScale = scale;
-            }
+    private void FlipGravity()
+    {
+        if (playerRigidbody != null)
+        {
+            playerRigidbody.gravityScale *= -1f;
+        }
+
+        if (playerTransform != null)
+        {
+            Vector3 scale = playerTransform.localScale;
+            scale.y *= -1f;
+            playerTransform.localScale = scale;
         }
     }
 
