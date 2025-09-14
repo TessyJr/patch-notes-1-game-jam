@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class SpikeDetection : MonoBehaviour
 {
+    [SerializeField] private SceneGameManager _sceneGameManager;
+
     public float restartDelay = 1f;
     [SerializeField] private GameObject _playerDeathPrefab;
 
@@ -12,7 +14,7 @@ public class SpikeDetection : MonoBehaviour
             SpawnDeathEffect();
             Destroy(gameObject);
 
-            SceneGameManager.Instance.Restart(restartDelay);
+            _sceneGameManager.Restart(restartDelay);
         }
     }
 
@@ -23,7 +25,7 @@ public class SpikeDetection : MonoBehaviour
             SpawnDeathEffect();
             Destroy(gameObject);
 
-            SceneGameManager.Instance.Restart(restartDelay);
+            _sceneGameManager.Restart(restartDelay);
         }
     }
 
