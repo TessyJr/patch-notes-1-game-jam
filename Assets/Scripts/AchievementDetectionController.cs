@@ -123,7 +123,7 @@ public class AchievementDetectionController : MonoBehaviour
         if (Time.time <= 5.5f)
         {
             _achivementSO.SpeedRunner = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "SpeedRunnerAchievement").GetName, _achievements.Find(a => a.name == "SpeedRunnerAchievement").GetIcon);
+            _popupManager.ShowPopup(_achievements.Find(a => a.name == "SpeedrunnerAchievement").GetName, _achievements.Find(a => a.name == "SpeedrunnerAchievement").GetIcon);
         }
     }
 

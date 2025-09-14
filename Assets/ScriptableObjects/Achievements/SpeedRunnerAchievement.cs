@@ -1,6 +1,6 @@
 using UnityEngine;
-[CreateAssetMenu(fileName = "SpeedRunnerAchievement", menuName = "Achievements/SpeedRunnerAchievement")]
-public class SpeedRunnerAchievement : Achievement
+[CreateAssetMenu(fileName = "SpeedrunnerAchievement", menuName = "Achievements/SpeedrunnerAchievement")]
+public class SpeedrunnerAchievement : Achievement
 {
     [SerializeField] private AchievementScriptableObject achievementSO;
     void OnEnable()
