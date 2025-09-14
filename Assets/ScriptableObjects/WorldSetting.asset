@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WorldSetting
   m_EditorClassIdentifier: 
   MissingTexture: 0
-  PhysicsGoneWild: 0
+  PhysicsGoneWild: 1
   UnsteadyHands: 0
-  InconsistentFriction: 1
+  InconsistentFriction: 0
   FPSDrop: 0
   WrongOffset: 0
   GravityFlip: 0

@@ -116,4 +116,5 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void SetFriction(float friction) => _friction = friction;
+    public float GetMovementSpeed() => _movementSpeed;
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AchievementDetectionController : MonoBehaviour
@@ -8,11 +6,21 @@ public class AchievementDetectionController : MonoBehaviour
     [SerializeField] private WorldSettingScriptableObject _worldSettingSO;
     [SerializeField] private AchievementScriptableObject _achivementSO;
 
+    [Header("Ground Is Not Where I Stand Settings")]
+    [SerializeField] private PlayerMovement _playerMovement;
+    private float _airTime = 0f;
+
     void Start()
     {
         CheckFailedTheQC();
 
         CheckAProperGame();
+    }
+
+    void Update()
+    {
+        CheckGroundIsNotWhereIStand();
+        CheckFastestManAlive();
     }
 
     private void CheckFailedTheQC()
@@ -95,7 +103,7 @@ public class AchievementDetectionController : MonoBehaviour
         }
     }
 
-    public void CheckSpeedRunner()
+    public void CheckSpeedrunner()
     {
         if (_achivementSO.SpeedRunner) return;
 
@@ -107,12 +115,30 @@ public class AchievementDetectionController : MonoBehaviour
 
     public void CheckGroundIsNotWhereIStand()
     {
+        if (_achivementSO.GroundIsNotWhereIStand) return;
 
+        if (_playerMovement.IsGrounded)
+        {
+            _airTime = 0f;
+            return;
+        }
+
+        _airTime += Time.deltaTime;
+
+        if (_airTime >= 3f)
+        {
+            _achivementSO.GroundIsNotWhereIStand = true;
+        }
     }
 
     public void CheckFastestManAlive()
     {
+        if (_achivementSO.FastestManAlive) return;
 
+        if (_playerMovement.GetMovementSpeed() >= 100f)
+        {
+            _achivementSO.FastestManAlive = true;
+        }
     }
 
     public void CheckBadGraphics()

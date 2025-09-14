@@ -12,7 +12,7 @@ public class SpikeDetection : MonoBehaviour
             SpawnDeathEffect();
             Destroy(gameObject);
 
-            GameSceneManager.Instance.Restart(restartDelay);
+            SceneGameManager.Instance.Restart(restartDelay);
         }
     }
 
@@ -23,7 +23,7 @@ public class SpikeDetection : MonoBehaviour
             SpawnDeathEffect();
             Destroy(gameObject);
 
-            GameSceneManager.Instance.Restart(restartDelay);
+            SceneGameManager.Instance.Restart(restartDelay);
         }
     }
 
