@@ -1,7 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "WorldSetting", menuName = "WorldSetting", order = 0)]
-
+[CreateAssetMenu(fileName = "WorldSetting", menuName = "ScriptableObjectAssets/WorldSetting", order = 0)]
 public class WorldSettingScriptableObject : ScriptableObject
 {
     public bool MissingTexture = false;
