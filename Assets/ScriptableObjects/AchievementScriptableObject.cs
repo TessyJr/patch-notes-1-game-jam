@@ -1,24 +1,59 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Achievement", menuName = "ScriptableObjectAssets/Achievement", order = 2)]
 public class AchievementScriptableObject : ScriptableObject
 {
-    public bool FailedTheQC = false;
-    public bool AProperGame = false;
-    public bool NotEnoughMoneyToHireArtist = false;
-    public bool WhoNeedsPrecision = false;
-    public bool SkippedPhysicsInHighSchool = false;
-    public bool NotAGoodCameraman = false;
-    public bool PotatoPC = false;
-    public bool NoControl = false;
-    public bool SpeedRunner = false;
-    public bool GroundIsNotWhereIStand = false;
-    public bool FastestManAlive = false;
-    public bool BadGraphics = false;
-    public bool DoesWhateverASpiderCan = false;
-    public bool YoureNotSupposedToGoThere = false;
-    public bool RageQuitter = false;
-    public bool YouShouldNotMakeAGame = false;
+    public bool FailedTheQC;
+    public bool AProperGame;
+    public bool NotEnoughMoneyToHireArtist;
+    public bool WhoNeedsPrecision;
+    public bool SkippedPhysicsInHighSchool;
+    public bool NotAGoodCameraman;
+    public bool PotatoPC;
+    public bool NoControl;
+    public bool SpeedRunner;
+    public bool GroundIsNotWhereIStand;
+    public bool FastestManAlive;
+    public bool BadGraphics;
+    public bool DoesWhateverASpiderCan;
+    public bool YoureNotSupposedToGoThere;
+    public bool RageQuitter;
+    public bool YouShouldNotMakeAGame;
+
+    public void Initialize()
+    {
+        FailedTheQC = false;
+        AProperGame = false;
+        NotEnoughMoneyToHireArtist = false;
+        WhoNeedsPrecision = false;
+        SkippedPhysicsInHighSchool = false;
+        NotAGoodCameraman = false;
+        PotatoPC = false;
+        NoControl = false;
+        SpeedRunner = false;
+        GroundIsNotWhereIStand = false;
+        FastestManAlive = false;
+        BadGraphics = false;
+        DoesWhateverASpiderCan = false;
+        YoureNotSupposedToGoThere = false;
+        RageQuitter = false;
+        YouShouldNotMakeAGame = false;
+    }
+
+    public bool AllUnlocked =>
+    FailedTheQC &&
+    AProperGame &&
+    NotEnoughMoneyToHireArtist &&
+    WhoNeedsPrecision &&
+    SkippedPhysicsInHighSchool &&
+    NotAGoodCameraman &&
+    PotatoPC &&
+    NoControl &&
+    SpeedRunner &&
+    GroundIsNotWhereIStand &&
+    FastestManAlive &&
+    BadGraphics &&
+    DoesWhateverASpiderCan &&
+    YoureNotSupposedToGoThere &&
+    RageQuitter;
 }
