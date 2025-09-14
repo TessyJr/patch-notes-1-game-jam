@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4520c52ceec64962b072501a932bd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _achievementDetectionController: {fileID: 490525323}
 --- !u!4 &490525322
 Transform:
   m_ObjectHideFlags: 0
@@ -439,6 +440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+  _achivementDetectionController: {fileID: 490525323}
   frameDropInterval: 1
   frameDropDuration: 0.5
   dropToFPS: 5
@@ -11326,6 +11328,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3755205288005450853, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
+      propertyPath: _sceneGameManager
+      value: 
+      objectReference: {fileID: 490525321}
     - target: {fileID: 6124308607639782869, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
       propertyPath: _playerSettingSO
       value: 
