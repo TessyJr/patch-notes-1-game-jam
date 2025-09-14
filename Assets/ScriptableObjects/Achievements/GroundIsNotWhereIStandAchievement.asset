@@ -16,5 +16,5 @@ MonoBehaviour:
   description: Stay midair without touching ground for 3 seconds
   clueText: "I believe I can fly\u2026 At least for a few seconds."
   isUnlocked: 1
-  icon: {fileID: -4784554060977693878, guid: 79022f0c1a1c5ce42bcba2ca880ef7fe, type: 3}
+  icon: {fileID: -125365109, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}

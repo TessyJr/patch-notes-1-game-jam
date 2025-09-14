@@ -15,6 +15,6 @@ MonoBehaviour:
   achievementName: Skipped Physics in High School
   description: Finish the level with Physics Gone Wild + Gravity Flip + What Is Ground?
   clueText: Newton would be mad to see these three laws broken.
-  isUnlocked: 0
-  icon: {fileID: 5641638529897069760, guid: 99e1beacf34e67c42afd2d344aefcc3c, type: 3}
+  isUnlocked: 1
+  icon: {fileID: -1324190274, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}

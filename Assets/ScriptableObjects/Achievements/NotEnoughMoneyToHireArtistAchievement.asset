@@ -15,6 +15,6 @@ MonoBehaviour:
   achievementName: Not Enough Money to Hire Artists!
   description: Finish the level with Missing Textures + Wrong Animation
   clueText: "If only I had the money\u2026 I wouldn\u2019t miss these two things!"
-  isUnlocked: 0
-  icon: {fileID: -8102069304995713464, guid: a766483fddea6b64f827838e089d1970, type: 3}
+  isUnlocked: 1
+  icon: {fileID: -986460465, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}
