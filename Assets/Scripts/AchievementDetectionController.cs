@@ -141,9 +141,14 @@ public class AchievementDetectionController : MonoBehaviour
         }
     }
 
-    public void CheckBadGraphics()
+    public void CheckBadGraphics(float renderValue)
     {
+        if (_achivementSO.BadGraphics) return;
 
+        if (renderValue <= 0.1f)
+        {
+            _achivementSO.BadGraphics = true;
+        }
     }
 
     public void CheckDoesWhateverASpiderCan()
