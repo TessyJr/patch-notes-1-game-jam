@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class ErrorSelectionManager : MonoBehaviour
 {
-    [SerializeField] private List<ErrorSelectionButton> _errors;
     [SerializeField] private ErrorSelectionButton _activeError;
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI descriptionText;
@@ -27,11 +26,7 @@ public class ErrorSelectionManager : MonoBehaviour
 
     void Start()
     {
-        if (_errors.Count > 0)
-        {
-            ActiveError = _errors[0];
-            OnErrorChange(_activeError);
-        }
+        OnErrorChange(_activeError);
     }
 
     private void OnErrorChange(ErrorSelectionButton error)
