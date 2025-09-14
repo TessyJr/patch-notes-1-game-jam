@@ -872,6 +872,7 @@ GameObject:
   - component: {fileID: 423230069}
   - component: {fileID: 423230068}
   - component: {fileID: 423230067}
+  - component: {fileID: 423230070}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -953,6 +954,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423230070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423230066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &423603488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,6 +2849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566480728}
   - component: {fileID: 1566480727}
+  - component: {fileID: 1566480729}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -2842,6 +2888,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1566480729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566480726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77e448b46d054700bdc2d2aa918d9bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerSettingSO: {fileID: 11400000, guid: bdb9ea5e5e58c4b99af9d749ae10063e, type: 2}
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+  _achivementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}
+  _popupManager: {fileID: 1724539319}
+  _achievements: []
+  _counterSO: {fileID: 11400000, guid: 26f6c6e1cb1354915b4d107458653016, type: 2}
+  _playerMovement: {fileID: 0}
 --- !u!1 &1617875480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3084,6 +3149,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710131212}
   m_CullTransparentMesh: 1
+--- !u!114 &1724539319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1474122096990837356, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
+  m_PrefabInstance: {fileID: 2810067611903033642}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab09d96d6686941e29f92ae18b6dce55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1755370181
 GameObject:
   m_ObjectHideFlags: 0
@@ -7934,6 +8010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4937a79793404a199e125926408189a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _counterSO: {fileID: 11400000, guid: 26f6c6e1cb1354915b4d107458653016, type: 2}
+  _resetCounter: 1
 --- !u!114 &5501875238926376363
 MonoBehaviour:
   m_ObjectHideFlags: 0
