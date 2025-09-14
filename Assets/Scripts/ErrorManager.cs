@@ -92,7 +92,7 @@ public class ErrorManager : MonoBehaviour
 
         if (_worldSettingSO.InconsistentFriction)
         {
-            StartCoroutine(inconsistentFrictionRoutine());
+            StartCoroutine(InconsistentFrictionRoutine());
         }
         else
         {
@@ -196,7 +196,7 @@ public class ErrorManager : MonoBehaviour
         _noise.m_FrequencyGain = 5f;
     }
 
-    private IEnumerator inconsistentFrictionRoutine()
+    private IEnumerator InconsistentFrictionRoutine()
     {
         while (_worldSettingSO.InconsistentFriction)
         {
