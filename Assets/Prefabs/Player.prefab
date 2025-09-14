@@ -106,6 +106,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1434027502840334052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8437957437136264002}
+  m_Layer: 0
+  m_Name: WallCircle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8437957437136264002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434027502840334052}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6694663020516000514}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7195051381575112576
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +266,7 @@ Transform:
   m_Children:
   - {fileID: 5187011905851539679}
   - {fileID: 403680726379493707}
+  - {fileID: 8437957437136264002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &3440922304130748083
@@ -341,11 +373,17 @@ MonoBehaviour:
   _rb: {fileID: 3440922304130748083}
   _movementSpeed: 4
   _jumpForce: 8
+  _friction: 0
   _groundCheck: {fileID: 403680726379493707}
   _groundCheckRadius: 0.4
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  _wallCheck: {fileID: 8437957437136264002}
+  _wallCheckRadius: 0.7
+  _wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
   _playerSettingSO: {fileID: 11400000, guid: bdb9ea5e5e58c4b99af9d749ae10063e, type: 2}
 --- !u!114 &7179779603551399565
 MonoBehaviour:
@@ -374,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65bf90e077b34afb8d74ecba7139d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneGameManager: {fileID: 0}
   restartDelay: 1
   _playerDeathPrefab: {fileID: 7481308742861255197, guid: 38f276e33e276411c8499e488faf8474, type: 3}
 --- !u!114 &3755205288005450853
@@ -388,6 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a58048cd5a5442a9d2c85a6c622515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneGameManager: {fileID: 0}
   restartDelay: 1
 --- !u!114 &2051296284593821627
 MonoBehaviour:

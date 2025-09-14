@@ -9,6 +9,7 @@ public class AchievementDetectionController : MonoBehaviour
     [Header("Ground Is Not Where I Stand Settings")]
     [SerializeField] private PlayerMovement _playerMovement;
     private float _airTime = 0f;
+    private float _wallTime = 0f;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class AchievementDetectionController : MonoBehaviour
     {
         CheckGroundIsNotWhereIStand();
         CheckFastestManAlive();
+        CheckDoesWhateverASpiderCan();
     }
 
     private void CheckFailedTheQC()
@@ -153,7 +155,20 @@ public class AchievementDetectionController : MonoBehaviour
 
     public void CheckDoesWhateverASpiderCan()
     {
+        if (_achivementSO.DoesWhateverASpiderCan) return;
 
+        if (_playerMovement.IsGrounded || !_playerMovement.IsStickToWall)
+        {
+            _wallTime = 0f;
+            return;
+        }
+
+        _wallTime += Time.deltaTime;
+
+        if (_wallTime >= 3f)
+        {
+            _achivementSO.DoesWhateverASpiderCan = true;
+        }
     }
 
     public void CheckYoureNotSupposedToGoThere()
