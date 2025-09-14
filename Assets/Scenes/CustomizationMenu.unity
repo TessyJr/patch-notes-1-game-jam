@@ -1526,7 +1526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
-  _achivementDetectionController: {fileID: 0}
+  _achivementDetectionController: {fileID: 1566480729}
   frameDropInterval: 1
   frameDropDuration: 0.5
   dropToFPS: 5
