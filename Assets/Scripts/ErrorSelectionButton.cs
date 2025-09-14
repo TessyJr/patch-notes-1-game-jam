@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class ErrorSelectionButton : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class ErrorSelectionButton : MonoBehaviour
     [SerializeField] private TextMeshProUGUI errorText;
     [SerializeField] private TextMeshProUGUI playerLimitText;
     [SerializeField] private TextMeshProUGUI worldLimitText;
+    [SerializeField] private String description;
+    [SerializeField] private Sprite icon;
     private Button button;
     void Start()
     {
@@ -46,4 +49,11 @@ public class ErrorSelectionButton : MonoBehaviour
         playerLimitText.text = $"Player Errors: {menuManager.GetSelectedPlayerErrorCount()}/3";
         worldLimitText.text = $"World Errors: {menuManager.GetSelectedWorldErrorCount()}/3";
     }
+    public override string ToString()
+    {
+        string text = isWorldError ? worldError.ToString() : playerError.ToString();
+        return System.Text.RegularExpressions.Regex.Replace(text, "(?<!^)([A-Z])", " $1");
+    }
+    public String GetDescription() => description;
+    public Sprite GetIcon() => icon;
 }
