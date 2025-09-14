@@ -23,6 +23,11 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 Velocity => _rb.velocity;
     public bool IsMoving => Mathf.Abs(_moveDirection.x) > 0.1f;
 
+    void Awake()
+    {
+        _originalMovementSpeed = _movementSpeed;
+    }
+
     void Update()
     {
         _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
