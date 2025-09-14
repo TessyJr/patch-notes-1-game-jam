@@ -17,10 +17,6 @@ public class AchievementDetectionController : MonoBehaviour
 
     void Start()
     {
-        CheckFailedTheQC();
-
-        CheckAProperGame();
-
         CheckRageQuitter();
 
         CheckYouShouldNotMakeAGame();
@@ -33,7 +29,7 @@ public class AchievementDetectionController : MonoBehaviour
         CheckDoesWhateverASpiderCan();
     }
 
-    private void CheckFailedTheQC()
+    public void CheckFailedTheQC()
     {
         if (_achivementSO.FailedTheQC) return;
 
@@ -43,7 +39,7 @@ public class AchievementDetectionController : MonoBehaviour
         }
     }
 
-    private void CheckAProperGame()
+    public void CheckAProperGame()
     {
         if (_achivementSO.AProperGame) return;
 
@@ -209,7 +205,7 @@ public class AchievementDetectionController : MonoBehaviour
     {
         if (_achivementSO.RageQuitter) return;
 
-        if (_counterSO.DeathCounter >= 1 && _counterSO._quitThrooughPause == true)
+        if (_counterSO.DeathCounter >= 1 && _counterSO.QuitThrooughPause == true)
         {
             _achivementSO.RageQuitter = true;
             _popupManager.ShowPopup(_achievements.Find(a => a.name == "RageQuitterAchievement").GetName, _achievements.Find(a => a.name == "RageQuitterAchievement").GetIcon);

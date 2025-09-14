@@ -52,7 +52,7 @@ public class PauseCanvasManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        _counterSO._quitThrooughPause = true;
+        _counterSO.QuitThrooughPause = true;
 
         AudioManager.Instance.PlaySFX(AudioManager.Instance.UISFX);
 

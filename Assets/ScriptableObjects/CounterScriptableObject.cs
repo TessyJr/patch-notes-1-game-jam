@@ -4,11 +4,11 @@ using UnityEngine;
 public class CounterScriptableObject : ScriptableObject
 {
     public int DeathCounter;
-    public bool _quitThrooughPause;
+    public bool QuitThrooughPause;
 
     public void Initialize()
     {
         DeathCounter = 0;
-        _quitThrooughPause = false;
+        QuitThrooughPause = false;
     }
 }

@@ -20,6 +20,8 @@ public class SceneGameManager : MonoBehaviour
         _achievementDetectionController.CheckPotatoPC();
         _achievementDetectionController.CheckNoControl();
         _achievementDetectionController.CheckSpeedrunner();
+        _achievementDetectionController.CheckAProperGame();
+        _achievementDetectionController.CheckFailedTheQC();
     }
 
     public void Restart(float delay = 0f)
