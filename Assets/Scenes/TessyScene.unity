@@ -696,7 +696,7 @@ MonoBehaviour:
   _content: {fileID: 609461199}
   _playerInput: {fileID: 6210029466929118242}
   _counterSO: {fileID: 11400000, guid: 26f6c6e1cb1354915b4d107458653016, type: 2}
-  _mainMenuScene: TessyScene
+  _mainMenuScene: MainMenu
 --- !u!1 &490525320
 GameObject:
   m_ObjectHideFlags: 0
