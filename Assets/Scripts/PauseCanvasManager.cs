@@ -7,6 +7,7 @@ public class PauseCanvasManager : MonoBehaviour
     [Header("General Settings")]
     [SerializeField] private GameObject _content;
     [SerializeField] private PlayerInput _playerInput;
+    [SerializeField] private CounterScriptableObject _counterSO;
 
     [Header("Sceene Settings")]
     [SerializeField] private string _mainMenuScene;
@@ -51,7 +52,10 @@ public class PauseCanvasManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        _counterSO._quitThrooughPause = true;
+
         AudioManager.Instance.PlaySFX(AudioManager.Instance.UISFX);
+
         SceneManager.LoadScene(_mainMenuScene);
     }
 }
