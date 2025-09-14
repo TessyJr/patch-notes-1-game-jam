@@ -11,6 +11,7 @@ public class SceneGameManager : MonoBehaviour
     void Awake()
     {
         _isGoalReached = false;
+        Time.timeScale = 1;
     }
 
     public void ReachGoal()
