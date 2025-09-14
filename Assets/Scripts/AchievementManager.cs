@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class AchievementManager : MonoBehaviour
 {
-    [SerializeField] private List<Achievement> _achievements = new List<Achievement>();
-    [SerializeField] private Achievement _activeAchievement;
+    [SerializeField] private List<AchievementItem> _achievements = new List<AchievementItem>();
+    [SerializeField] private AchievementItem _activeAchievement;
     [SerializeField] private TextMeshProUGUI achievementText;
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private Image iconImage;
 
-    public Achievement ActiveAchievement
+    public AchievementItem ActiveAchievement
     {
         get => _activeAchievement;
         set
@@ -34,42 +34,20 @@ public class AchievementManager : MonoBehaviour
         }
     }
 
-    private void OnAchievementChange(Achievement achievement)
+    private void OnAchievementChange(AchievementItem achievement)
     {
-        achievement.SetIconImageColor(achievement.GetIsUnlocked ? Color.white : Color.black);
-        achievementText.text = achievement.GetName;
-        iconImage.sprite = achievement.GetIcon;
-        iconImage.color = achievement.GetIsUnlocked ? Color.white : Color.black;
-        if (achievement.GetIsUnlocked)
+        Achievement achievementSO = achievement.GetAchievementSO;
+        achievement.SetIconImageColor(achievementSO.GetIsUnlocked ? Color.white : Color.black);
+        achievementText.text = achievementSO.GetName;
+        iconImage.sprite = achievementSO.GetIcon;
+        iconImage.color = achievementSO.GetIsUnlocked ? Color.white : Color.black;
+        if (achievementSO.GetIsUnlocked)
         {
-            descriptionText.text = achievement.GetDescription;
+            descriptionText.text = achievementSO.GetDescription;
         }
         else
         {
             descriptionText.text = "(????)";
         }
-    }
-
-    public void ToggleActiveAchievementLock()
-    {
-        if (_activeAchievement != null)
-        {
-            _activeAchievement.ToggleLock();
-            OnAchievementChange(_activeAchievement);
-        }
-    }
-
-    private string GetRandomLockedText()
-    {
-        var lockedTexts = new List<string>
-        {
-            "(????)",
-            "Achievement Locked",
-            "I think you should find out yourself",
-            "lorem ipsum dolor sit amet",
-            "_activeAchievement.GetDescription"
-        };
-        int index = Random.Range(0, lockedTexts.Count);
-        return lockedTexts[index];
     }
 }

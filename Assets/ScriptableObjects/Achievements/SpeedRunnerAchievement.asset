@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: SpeedRunnerAchievement
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRunnerAchievement
+  achievementName: Speedrunner
+  description: Finish the level within 5 seconds
+  clueText: "Surely a pro gamer can clear a level in seconds\u2026 right? Even when
+    it\u2019s buggy."
+  isUnlocked: 0
+  icon: {fileID: 4138223980208024357, guid: 5100b75572e484e458e4340e2afe9454, type: 3}
+  achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}
