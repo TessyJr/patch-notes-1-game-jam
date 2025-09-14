@@ -371,6 +371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4937a79793404a199e125926408189a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _counterSO: {fileID: 0}
+  _resetCounter: 0
 --- !u!1001 &548801130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -835,6 +837,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692361922}
   m_CullTransparentMesh: 1
+--- !u!1 &921359973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921359975}
+  - component: {fileID: 921359974}
+  m_Layer: 0
+  m_Name: ErrorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &921359974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921359973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ad22ce39c914d31b3d5139d5da3792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+  _achivementDetectionController: {fileID: 0}
+  frameDropInterval: 1
+  frameDropDuration: 0.5
+  dropToFPS: 5
+  _glitchMaterial: {fileID: 2100000, guid: 7c0d0e42429ab40ee9d23d301b02454c, type: 2}
+  _spriteRenderers:
+  - {fileID: 0}
+  - {fileID: 0}
+  _tilemapRenderers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  urpAsset: {fileID: 11400000, guid: 681886c5eb7344803b6206f758bf0b1c, type: 2}
+  qualityStepInterval: 0.75
+  qualityStepAmount: 0.1
+  minRenderScale: 0.1
+  playerRigidbody: {fileID: 0}
+  playerTransform: {fileID: 0}
+  gravityFlipInterval: 1
+  _cinemachine: {fileID: 0}
+  blackScreen: {fileID: 0}
+  minLightingIssueInterval: 1
+  maxLightingIssueInterval: 2
+  playerMovement: {fileID: 0}
+  inconsistentFrictionInterval: 1
+  minFriction: 0
+  maxFriction: 1
+--- !u!4 &921359975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921359973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.190932, y: -6.417667, z: -0.19766903}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1110790063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,6 +1705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4937a79793404a199e125926408189a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _counterSO: {fileID: 0}
+  _resetCounter: 0
 --- !u!1 &1570420612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,3 +1949,4 @@ SceneRoots:
   - {fileID: 1517372232}
   - {fileID: 548801130}
   - {fileID: 1148366123}
+  - {fileID: 921359975}
