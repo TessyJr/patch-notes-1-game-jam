@@ -201,6 +201,22 @@ MonoBehaviour:
   _popupManager: {fileID: 2125653503}
   _achievements:
   - {fileID: 11400000, guid: 5ea8f8193eafc4763bf8983cc22ba9d4, type: 2}
+  - {fileID: 11400000, guid: 568dae061e1844d0eb63f6ed49140c29, type: 2}
+  - {fileID: 11400000, guid: e1da9ae0e351443eb8d610506c149fc3, type: 2}
+  - {fileID: 11400000, guid: b95cfd15b052e4351a2a0b0f223c3b6e, type: 2}
+  - {fileID: 11400000, guid: adb7589b1461944ac8839ef45dbacd14, type: 2}
+  - {fileID: 11400000, guid: 10f456f97a4d04af283722ca04b2434d, type: 2}
+  - {fileID: 11400000, guid: 08998797c339143d4af84812b47d7b37, type: 2}
+  - {fileID: 11400000, guid: 826c9a6ac1c744a05ba7bfc641adceb1, type: 2}
+  - {fileID: 11400000, guid: 32689f1d83d764e0ba27dd671b7cb443, type: 2}
+  - {fileID: 11400000, guid: 0fcbbb3114dff4dca9cccd8e6cd9a6e7, type: 2}
+  - {fileID: 11400000, guid: 69ae1e358bbf4415587bc7e5a2bcf2bd, type: 2}
+  - {fileID: 11400000, guid: 59ad78ce5a4d845f5806241848b5178d, type: 2}
+  - {fileID: 11400000, guid: e24d5baba3239424e87f87e577dde8f1, type: 2}
+  - {fileID: 11400000, guid: 2f1b16708fcca46d7ace1df487c2e1e3, type: 2}
+  - {fileID: 11400000, guid: ee864f36a413e460aa5d81efa06d0405, type: 2}
+  - {fileID: 11400000, guid: 917a33fe5e5ba45b38317a34ed01639b, type: 2}
+  _counterSO: {fileID: 11400000, guid: 26f6c6e1cb1354915b4d107458653016, type: 2}
   _playerMovement: {fileID: 6210029466929118237}
 --- !u!483693784 &1158038199 stripped
 TilemapRenderer:
@@ -819,7 +835,7 @@ PrefabInstance:
       objectReference: {fileID: 2121936724}
     - target: {fileID: 4724084791965821388, guid: cc25cc529b4df499a9b015d3f93df1a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.77444553
+      value: 0.7786503
       objectReference: {fileID: 0}
     - target: {fileID: 4724084791965821388, guid: cc25cc529b4df499a9b015d3f93df1a3, type: 3}
       propertyPath: m_LocalPosition.y
