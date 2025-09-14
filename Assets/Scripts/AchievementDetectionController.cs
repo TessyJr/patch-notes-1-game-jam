@@ -36,6 +36,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_playerSettingSO.HasAny || _worldSettingSO.HasAny)
         {
             _achivementSO.FailedTheQC = true;
+            Achievement achievement = _achievements.Find(a => a.name == "FailedTheQCAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);
         }
     }
 
