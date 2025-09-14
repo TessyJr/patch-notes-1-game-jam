@@ -7,4 +7,8 @@ public class AProperGameAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.AProperGame);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.AProperGame);
+    }
 }

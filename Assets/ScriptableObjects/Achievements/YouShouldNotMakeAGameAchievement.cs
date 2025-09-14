@@ -7,4 +7,8 @@ public class YouShouldNotMakeAGameAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.YouShouldNotMakeAGame);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.YouShouldNotMakeAGame);
+    }
 }

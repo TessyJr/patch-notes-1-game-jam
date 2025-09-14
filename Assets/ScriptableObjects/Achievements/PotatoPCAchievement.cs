@@ -7,4 +7,8 @@ public class PotatoPCAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.PotatoPC);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.PotatoPC);
+    }
 }

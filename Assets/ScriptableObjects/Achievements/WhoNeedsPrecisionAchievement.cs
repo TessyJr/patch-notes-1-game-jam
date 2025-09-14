@@ -7,4 +7,8 @@ public class WhoNeedsPrecisionAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.WhoNeedsPrecision);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.WhoNeedsPrecision);
+    }
 }

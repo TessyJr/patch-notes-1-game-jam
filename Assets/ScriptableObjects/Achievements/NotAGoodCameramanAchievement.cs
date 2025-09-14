@@ -7,4 +7,8 @@ public class NotAGoodCameramanAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.NotAGoodCameraman);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.NotAGoodCameraman);
+    }
 }

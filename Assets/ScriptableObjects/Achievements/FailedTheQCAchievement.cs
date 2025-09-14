@@ -7,4 +7,8 @@ public class FailedTheQCAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.FailedTheQC);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.FailedTheQC);
+    }
 }

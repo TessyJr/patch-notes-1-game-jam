@@ -7,4 +7,8 @@ public class YoureNotSupposedToGoThereAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.YoureNotSupposedToGoThere);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.YoureNotSupposedToGoThere);
+    }
 }

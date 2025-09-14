@@ -7,4 +7,8 @@ public class GroundIsNotWhereIStandAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.GroundIsNotWhereIStand);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.GroundIsNotWhereIStand);
+    }
 }

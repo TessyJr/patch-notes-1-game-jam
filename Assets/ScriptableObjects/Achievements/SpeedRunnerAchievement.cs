@@ -7,4 +7,8 @@ public class SpeedrunnerAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.SpeedRunner);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.SpeedRunner);
+    }
 }

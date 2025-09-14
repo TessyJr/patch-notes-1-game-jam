@@ -7,4 +7,8 @@ public class RageQuitterAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.RageQuitter);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.RageQuitter);
+    }
 }

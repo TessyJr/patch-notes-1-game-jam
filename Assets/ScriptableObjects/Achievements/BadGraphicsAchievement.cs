@@ -7,4 +7,8 @@ public class BadGraphicsAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.BadGraphics);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.BadGraphics);
+    }
 }
