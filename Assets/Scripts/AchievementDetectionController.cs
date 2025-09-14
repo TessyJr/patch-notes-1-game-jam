@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AchievementDetectionController : MonoBehaviour
@@ -5,6 +6,8 @@ public class AchievementDetectionController : MonoBehaviour
     [SerializeField] private PlayerSettingScriptableObject _playerSettingSO;
     [SerializeField] private WorldSettingScriptableObject _worldSettingSO;
     [SerializeField] private AchievementScriptableObject _achivementSO;
+    [SerializeField] private PopupManager _popupManager;
+    [SerializeField] private List<Achievement> _achievements;
     [SerializeField] private CounterScriptableObject _counterSO;
 
     [Header("Ground Is Not Where I Stand Settings")]
@@ -43,6 +46,7 @@ public class AchievementDetectionController : MonoBehaviour
         if (!_playerSettingSO.HasAny && !_playerSettingSO.HasAny)
         {
             _achivementSO.AProperGame = true;
+            _popupManager.ShowPopup(_achievements.Find(a => a.name == "AProperGameAchievement").GetName, _achievements.Find(a => a.name == "AProperGameAchievement").GetIcon);
         }
     }
 

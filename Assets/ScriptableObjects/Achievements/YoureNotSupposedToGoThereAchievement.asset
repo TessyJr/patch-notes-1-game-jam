@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052e26f1872034707949715c1f94ab87, type: 3}
+  m_Name: YoureNotSupposedToGoThereAchievement
+  m_EditorClassIdentifier: 
+  achievementName: "You\u2019re Not Supposed To Go There!"
+  description: Go outside the level
+  clueText: "There should\u2019ve been a barrier to prevent any access\u2026 yet
+    here I am."
+  isUnlocked: 0
+  icon: {fileID: 4121880872312635667, guid: ffc9f271fad56c243a45f100b9dc6778, type: 3}
+  achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}
