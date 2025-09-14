@@ -427,8 +427,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a58048cd5a5442a9d2c85a6c622515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _reachGoalCanvasManager: {fileID: 0}
   _sceneGameManager: {fileID: 0}
-  restartDelay: 1
+  _playerInput: {fileID: 8574834330265058590}
 --- !u!114 &2051296284593821627
 MonoBehaviour:
   m_ObjectHideFlags: 0
