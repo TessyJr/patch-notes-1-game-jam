@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerSetting
   m_EditorClassIdentifier: 
   WrongAnimation: 0
-  WhatIsGround: 1
+  WhatIsGround: 0
   ShiftedHitbox: 0
-  SpeedDemon: 1
+  SpeedDemon: 0
   BrokenControl: 0
   InputLag: 0
