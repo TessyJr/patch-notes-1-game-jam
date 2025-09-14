@@ -20,6 +20,10 @@ public class AchievementDetectionController : MonoBehaviour
         CheckFailedTheQC();
 
         CheckAProperGame();
+
+        CheckRageQuitter();
+
+        CheckYouShouldNotMakeAGame();
     }
 
     void Update()
@@ -131,6 +135,8 @@ public class AchievementDetectionController : MonoBehaviour
     {
         if (_achivementSO.GroundIsNotWhereIStand) return;
 
+        if (!_playerMovement) return;
+
         if (_playerMovement.IsGrounded)
         {
             _airTime = 0f;
@@ -149,6 +155,8 @@ public class AchievementDetectionController : MonoBehaviour
     public void CheckFastestManAlive()
     {
         if (_achivementSO.FastestManAlive) return;
+
+        if (!_playerMovement) return;
 
         if (_playerMovement.GetMovementSpeed() >= 100f)
         {
@@ -171,6 +179,8 @@ public class AchievementDetectionController : MonoBehaviour
     public void CheckDoesWhateverASpiderCan()
     {
         if (_achivementSO.DoesWhateverASpiderCan) return;
+
+        if (!_playerMovement) return;
 
         if (_playerMovement.IsGrounded || !_playerMovement.IsStickToWall)
         {
@@ -199,7 +209,7 @@ public class AchievementDetectionController : MonoBehaviour
     {
         if (_achivementSO.RageQuitter) return;
 
-        if (_counterSO.DeathCounter >= 1)
+        if (_counterSO.DeathCounter >= 1 && _counterSO._quitThrooughPause == true)
         {
             _achivementSO.RageQuitter = true;
             _popupManager.ShowPopup(_achievements.Find(a => a.name == "RageQuitterAchievement").GetName, _achievements.Find(a => a.name == "RageQuitterAchievement").GetIcon);
