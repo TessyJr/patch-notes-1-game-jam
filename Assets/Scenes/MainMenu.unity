@@ -122,6 +122,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &286397212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3430721496029966450, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_Name
+      value: AspectRatioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869079094411404811, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1312746331}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.788859
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6550763
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.038283
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7865489944663867013, guid: afe9510990414449aa238164502e2896, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: afe9510990414449aa238164502e2896, type: 3}
 --- !u!1 &318074592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,8 +1568,8 @@ Camera:
   m_GameObject: {fileID: 1312746329}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2193,6 +2254,7 @@ MonoBehaviour:
   GameBGM: {fileID: 8300000, guid: 8063361956dc8415185a6419113cf121, type: 3}
   UISFX: {fileID: 8300000, guid: 24d8f4ccb6758470cbf968cb64cfb081, type: 3}
   WinSFX: {fileID: 8300000, guid: 057ae13e7eb5c44b2aaf20dda18d4f62, type: 3}
+  ACchievementSFX: {fileID: 8300000, guid: 0178df6b5b00f43998cd004df9fc142d, type: 3}
   PlayerJumpSFX: {fileID: 8300000, guid: 3a85f9aa2e8d4479584f29b5c3bc4ab9, type: 3}
   PlayerDieSFX: {fileID: 8300000, guid: 176fa47ff2e9e46db808c9bbb398e660, type: 3}
 --- !u!4 &1651135317
@@ -2260,3 +2322,4 @@ SceneRoots:
   - {fileID: 1148366123}
   - {fileID: 921359975}
   - {fileID: 1651135317}
+  - {fileID: 286397212}
