@@ -3,7 +3,7 @@ using UnityEngine;
 public class FastestManAliveAchievement : Achievement
 {
     [SerializeField] private AchievementScriptableObject achievementSO;
-    void OnEnable()
+    public override void Unlock()
     {
         SetIsUnlocked(achievementSO.FastestManAlive);
     }

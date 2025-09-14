@@ -3,7 +3,7 @@ using UnityEngine;
 public class RageQuitterAchievement : Achievement
 {
     [SerializeField] private AchievementScriptableObject achievementSO;
-    void OnEnable()
+    public override void Unlock()
     {
         SetIsUnlocked(achievementSO.RageQuitter);
     }

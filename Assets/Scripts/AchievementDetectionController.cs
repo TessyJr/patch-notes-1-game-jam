@@ -46,7 +46,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (!_playerSettingSO.HasAny && !_playerSettingSO.HasAny)
         {
             _achivementSO.AProperGame = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "AProperGameAchievement").GetName, _achievements.Find(a => a.name == "AProperGameAchievement").GetIcon);
+            Achievement achievement = _achievements.Find(a => a.name == "AProperGameAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);
         }
     }
 
@@ -57,8 +59,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_worldSettingSO.MissingTexture == true && _playerSettingSO.WrongAnimation)
         {
             _achivementSO.NotEnoughMoneyToHireArtist = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "NotEnoughMoneyToHireArtistAchievement").GetName, _achievements.Find(a => a.name == "NotEnoughMoneyToHireArtistAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "NotEnoughMoneyToHireArtistAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckWhoNeedsPrecision()
@@ -68,8 +71,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_worldSettingSO.WrongOffset && _playerSettingSO.ShiftedHitbox)
         {
             _achivementSO.WhoNeedsPrecision = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "WhoNeedsPrecisionAchievement").GetName, _achievements.Find(a => a.name == "WhoNeedsPrecisionAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "WhoNeedsPrecisionAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckSkippedPhysicsInHighSchool()
@@ -79,8 +83,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_worldSettingSO.PhysicsGoneWild && _worldSettingSO.GravityFlip && _playerSettingSO.WhatIsGround)
         {
             _achivementSO.SkippedPhysicsInHighSchool = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "SkippedPhysicsInHighSchoolAchievement").GetName, _achievements.Find(a => a.name == "SkippedPhysicsInHighSchoolAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "SkippedPhysicsInHighSchoolAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckNotAGoodCameraMan()
@@ -90,8 +95,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_worldSettingSO.UnsteadyHands && _worldSettingSO.LightingIssue)
         {
             _achivementSO.NotAGoodCameraman = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "NotAGoodCameramanAchievement").GetName, _achievements.Find(a => a.name == "NotAGoodCameramanAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "NotAGoodCameramanAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckPotatoPC()
@@ -101,8 +107,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_worldSettingSO.FPSDrop && _playerSettingSO.InputLag)
         {
             _achivementSO.PotatoPC = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "PotatoPCAchievement").GetName, _achievements.Find(a => a.name == "PotatoPCAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "PotatoPCAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckNoControl()
@@ -112,8 +119,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_playerSettingSO.BrokenControl)
         {
             _achivementSO.NoControl = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "NoControlAchievement").GetName, _achievements.Find(a => a.name == "NoControlAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "NoControlAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckSpeedrunner()
@@ -123,8 +131,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (Time.time <= 5.5f)
         {
             _achivementSO.SpeedRunner = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "SpeedrunnerAchievement").GetName, _achievements.Find(a => a.name == "SpeedrunnerAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "SpeedrunnerAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckGroundIsNotWhereIStand()
@@ -144,8 +153,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_airTime >= 3f)
         {
             _achivementSO.GroundIsNotWhereIStand = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "GroundIsNotWhereIStandAchievement").GetName, _achievements.Find(a => a.name == "GroundIsNotWhereIStandAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "GroundIsNotWhereIStandAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckFastestManAlive()
@@ -157,8 +167,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_playerMovement.GetMovementSpeed() >= 100f)
         {
             _achivementSO.FastestManAlive = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "FastestManAliveAchievement").GetName, _achievements.Find(a => a.name == "FastestManAliveAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "FastestManAliveAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckBadGraphics(float renderValue)
@@ -168,8 +179,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (renderValue <= 0.1f)
         {
             _achivementSO.BadGraphics = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "BadGraphicsAchievement").GetName, _achievements.Find(a => a.name == "BadGraphicsAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "BadGraphicsAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckDoesWhateverASpiderCan()
@@ -189,8 +201,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_wallTime >= 3f)
         {
             _achivementSO.DoesWhateverASpiderCan = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "DoesWhateverASpiderCanAchievement").GetName, _achievements.Find(a => a.name == "DoesWhateverASpiderCanAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "DoesWhateverASpiderCanAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckYoureNotSupposedToGoThere()
@@ -198,8 +211,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_achivementSO.YoureNotSupposedToGoThere) return;
 
         _achivementSO.YoureNotSupposedToGoThere = true;
-        _popupManager.ShowPopup(_achievements.Find(a => a.name == "YoureNotSupposedToGoThereAchievement").GetName, _achievements.Find(a => a.name == "YoureNotSupposedToGoThereAchievement").GetIcon);
-    }
+            Achievement achievement = _achievements.Find(a => a.name == "YoureNotSupposedToGoThereAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);    }
 
     public void CheckRageQuitter()
     {
@@ -208,8 +222,9 @@ public class AchievementDetectionController : MonoBehaviour
         if (_counterSO.DeathCounter >= 1 && _counterSO.QuitThrooughPause == true)
         {
             _achivementSO.RageQuitter = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "RageQuitterAchievement").GetName, _achievements.Find(a => a.name == "RageQuitterAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "RageQuitterAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 
     public void CheckYouShouldNotMakeAGame()
@@ -219,7 +234,8 @@ public class AchievementDetectionController : MonoBehaviour
         if (_achivementSO.AllUnlocked)
         {
             _achivementSO.YouShouldNotMakeAGame = true;
-            _popupManager.ShowPopup(_achievements.Find(a => a.name == "YouShouldNotMakeAGameAchievement").GetName, _achievements.Find(a => a.name == "YouShouldNotMakeAGameAchievement").GetIcon);
-        }
+            Achievement achievement = _achievements.Find(a => a.name == "YouShouldNotMakeAGameAchievement");
+            achievement.Unlock();
+            _popupManager.ShowPopup(achievement.GetName, achievement.GetIcon);        }
     }
 }
