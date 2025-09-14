@@ -4,6 +4,7 @@ public class SpikeDetection : MonoBehaviour
 {
     [SerializeField] private SceneGameManager _sceneGameManager;
     [SerializeField] private CounterScriptableObject _counterSO;
+    [SerializeField] private AchievementDetectionController _achievementDetectionController;
 
     public float restartDelay = 1f;
     [SerializeField] private GameObject _playerDeathPrefab;
@@ -12,15 +13,26 @@ public class SpikeDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerDieSFX);
-
-            _counterSO.DeathCounter += 1;
-
-            SpawnDeathEffect();
-            Destroy(gameObject);
-
-            _sceneGameManager.Restart(restartDelay);
+            TriggerDeath();
         }
+        else if (collision.gameObject.CompareTag("WorldLimit"))
+        {
+            _achievementDetectionController.CheckYoureNotSupposedToGoThere();
+
+            TriggerDeath();
+        }
+    }
+
+    private void TriggerDeath()
+    {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerDieSFX);
+
+        _counterSO.DeathCounter += 1;
+
+        SpawnDeathEffect();
+        Destroy(gameObject);
+
+        _sceneGameManager.Restart(restartDelay);
     }
 
     private void SpawnDeathEffect()
