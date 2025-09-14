@@ -342,7 +342,7 @@ MonoBehaviour:
   _movementSpeed: 4
   _jumpForce: 8
   _groundCheck: {fileID: 403680726379493707}
-  _groundCheckRadius: 0.2
+  _groundCheckRadius: 0.4
   _groundLayer:
     serializedVersion: 2
     m_Bits: 64
