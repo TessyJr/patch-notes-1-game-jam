@@ -38,7 +38,7 @@ public class MenuManager : MonoBehaviour
             case WorldError.InconsistentFriction:
                 _worldSettingSO.InconsistentFriction = value;
                 break;
-            case WorldError.FPSDrop:
+            case WorldError.FpsDrop:
                 _worldSettingSO.FPSDrop = value;
                 break;
             case WorldError.WrongOffset:
