@@ -447,7 +447,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgmSource: {fileID: 10865014}
   sfxSource: {fileID: 1480664870}
-  GameBGM: {fileID: 8300000, guid: d70c1d4adf8eb4d03b36ea621c74c808, type: 3}
+  GameBGM: {fileID: 8300000, guid: 8063361956dc8415185a6419113cf121, type: 3}
+  UISFX: {fileID: 8300000, guid: 24d8f4ccb6758470cbf968cb64cfb081, type: 3}
+  WinSFX: {fileID: 8300000, guid: 057ae13e7eb5c44b2aaf20dda18d4f62, type: 3}
+  PlayerJumpSFX: {fileID: 8300000, guid: 3a85f9aa2e8d4479584f29b5c3bc4ab9, type: 3}
+  PlayerDieSFX: {fileID: 8300000, guid: 176fa47ff2e9e46db808c9bbb398e660, type: 3}
 --- !u!1 &457714001
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,12 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _content: {fileID: 609461199}
-  _playerInputActionMap:
-    m_Name: 
-    m_Id: 
-    m_Asset: {fileID: 0}
-    m_Actions: []
-    m_Bindings: []
+  _playerInput: {fileID: 6210029466929118242}
   _mainMenuScene: TessyScene
 --- !u!1 &490525320
 GameObject:

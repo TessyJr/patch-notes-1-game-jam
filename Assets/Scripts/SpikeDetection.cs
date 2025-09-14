@@ -12,6 +12,8 @@ public class SpikeDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerDieSFX);
+
             _counterSO.DeathCounter += 1;
 
             SpawnDeathEffect();

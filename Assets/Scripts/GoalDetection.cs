@@ -11,6 +11,8 @@ public class GoalDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Goal"))
         {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.WinSFX);
+
             _playerInput.actions.Disable();
 
             _reachGoalCanvasManager.OpenCanvas();

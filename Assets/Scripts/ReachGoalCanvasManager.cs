@@ -16,12 +16,15 @@ public class ReachGoalCanvasManager : MonoBehaviour
 
     public void Restart()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.UISFX);
+
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
     }
 
     public void BackToMainMenu()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.UISFX);
         SceneManager.LoadScene(_mainMenuScene);
     }
 }
