@@ -386,11 +386,11 @@ PrefabInstance:
     - target: {fileID: 795287950399978034, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 3ee0193ee143141ea867ec903c4d00a0, type: 2}
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 795287950399978034, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -4683779860018890828, guid: 3ee0193ee143141ea867ec903c4d00a0, type: 2}
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 795287950399978034, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -398,15 +398,15 @@ PrefabInstance:
     - target: {fileID: 2905286320660197312, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1312746331}
     - target: {fileID: 3225249317126929996, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 3ee0193ee143141ea867ec903c4d00a0, type: 2}
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 3225249317126929996, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -4683779860018890828, guid: 3ee0193ee143141ea867ec903c4d00a0, type: 2}
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     - target: {fileID: 3225249317126929996, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -556,6 +556,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
+--- !u!114 &548801131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1474122096990837356, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
+  m_PrefabInstance: {fileID: 548801130}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab09d96d6686941e29f92ae18b6dce55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &678260021
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,8 +626,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -646,7 +657,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -749,8 +760,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Achievements
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -780,7 +791,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -974,6 +985,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113884368}
   m_CullTransparentMesh: 1
+--- !u!1 &1148366120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148366123}
+  - component: {fileID: 1148366122}
+  - component: {fileID: 1148366121}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1148366121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148366120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77e448b46d054700bdc2d2aa918d9bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerSettingSO: {fileID: 11400000, guid: bdb9ea5e5e58c4b99af9d749ae10063e, type: 2}
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
+  _achivementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}
+  _popupManager: {fileID: 548801131}
+  _achievements:
+  - {fileID: 11400000, guid: 5ea8f8193eafc4763bf8983cc22ba9d4, type: 2}
+  - {fileID: 11400000, guid: 568dae061e1844d0eb63f6ed49140c29, type: 2}
+  - {fileID: 11400000, guid: e1da9ae0e351443eb8d610506c149fc3, type: 2}
+  - {fileID: 11400000, guid: b95cfd15b052e4351a2a0b0f223c3b6e, type: 2}
+  - {fileID: 11400000, guid: adb7589b1461944ac8839ef45dbacd14, type: 2}
+  - {fileID: 11400000, guid: 10f456f97a4d04af283722ca04b2434d, type: 2}
+  - {fileID: 11400000, guid: 08998797c339143d4af84812b47d7b37, type: 2}
+  - {fileID: 11400000, guid: 826c9a6ac1c744a05ba7bfc641adceb1, type: 2}
+  - {fileID: 11400000, guid: 32689f1d83d764e0ba27dd671b7cb443, type: 2}
+  - {fileID: 11400000, guid: 0fcbbb3114dff4dca9cccd8e6cd9a6e7, type: 2}
+  - {fileID: 11400000, guid: 69ae1e358bbf4415587bc7e5a2bcf2bd, type: 2}
+  - {fileID: 11400000, guid: 59ad78ce5a4d845f5806241848b5178d, type: 2}
+  - {fileID: 11400000, guid: e24d5baba3239424e87f87e577dde8f1, type: 2}
+  - {fileID: 11400000, guid: 2f1b16708fcca46d7ace1df487c2e1e3, type: 2}
+  - {fileID: 11400000, guid: ee864f36a413e460aa5d81efa06d0405, type: 2}
+  - {fileID: 11400000, guid: 917a33fe5e5ba45b38317a34ed01639b, type: 2}
+  _counterSO: {fileID: 11400000, guid: 26f6c6e1cb1354915b4d107458653016, type: 2}
+  _playerMovement: {fileID: 0}
+--- !u!114 &1148366122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148366120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4520c52ceec64962b072501a932bd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _achievementDetectionController: {fileID: 1148366121}
+--- !u!4 &1148366123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148366120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.480687, y: -1.5859381, z: -0.88711023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243342586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,8 +1191,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start Coding
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1130,7 +1222,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1777,3 +1869,4 @@ SceneRoots:
   - {fileID: 381235437}
   - {fileID: 1517372232}
   - {fileID: 548801130}
+  - {fileID: 1148366123}
