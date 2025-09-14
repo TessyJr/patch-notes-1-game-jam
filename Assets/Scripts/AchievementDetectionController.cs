@@ -5,6 +5,7 @@ public class AchievementDetectionController : MonoBehaviour
     [SerializeField] private PlayerSettingScriptableObject _playerSettingSO;
     [SerializeField] private WorldSettingScriptableObject _worldSettingSO;
     [SerializeField] private AchievementScriptableObject _achivementSO;
+    [SerializeField] private CounterScriptableObject _counterSO;
 
     [Header("Ground Is Not Where I Stand Settings")]
     [SerializeField] private PlayerMovement _playerMovement;
@@ -180,7 +181,12 @@ public class AchievementDetectionController : MonoBehaviour
 
     public void CheckRageQuitter()
     {
+        if (_achivementSO.RageQuitter) return;
 
+        if (_counterSO.DeathCounter >= 1)
+        {
+            _achivementSO.RageQuitter = true;
+        }
     }
 
     public void CheckYouShouldNotMakeAGame()
