@@ -448,9 +448,9 @@ MonoBehaviour:
   minLightingIssueInterval: 1
   maxLightingIssueInterval: 2
   playerMovement: {fileID: 6210029466929118237}
-  inconsistentFrictionInterval: 0.5
-  minSpeed: 0
-  maxSpeed: 4
+  inconsistentFrictionInterval: 0.25
+  minFriction: 0
+  maxFriction: 1
 --- !u!212 &1844712169 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7225283163248167059, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}

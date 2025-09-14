@@ -5,12 +5,19 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private static WaitForSeconds _waitForSeconds1 = new WaitForSeconds(0.6f);
+
+    [Header("Movement Settings")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private float _movementSpeed = 4f;
     [SerializeField] private float _jumpForce = 8f;
+    [SerializeField] private float _friction = 0f;
+
+    [Header("Ground Checker Settings")]
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _groundCheckRadius = 0.4f;
     [SerializeField] private LayerMask _groundLayer;
+
+    [Header("Scriptable Object Settings")]
     [SerializeField] private PlayerSettingScriptableObject _playerSettingSO;
 
     private Vector2 _moveDirection;
@@ -32,21 +39,24 @@ public class PlayerMovement : MonoBehaviour
     {
         _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
 
-        // detect landing
-        if (_isGrounded && !_wasGrounded)
-        {
-            RestoreMovementSpeed();
-        }
-
         _wasGrounded = _isGrounded;
     }
 
     private void FixedUpdate()
     {
-        Vector2 move = _moveDirection * _movementSpeed;
+        // Apply friction only on ground
+        float effectiveSpeed = _movementSpeed;
+        if (_isGrounded && _friction > 0f)
+        {
+            effectiveSpeed *= (1f - _friction); // reduce speed by friction %
+        }
+
+        // Apply movement
+        Vector2 move = _moveDirection * effectiveSpeed;
         _rb.velocity = new Vector2(move.x + _externalForce.x, _rb.velocity.y);
         _externalForce = Vector2.zero;
 
+        // SpeedDemon mechanic
         if (_rb.velocity.x != 0 && _playerSettingSO.SpeedDemon)
         {
             _movementSpeed += 0.15f;
@@ -97,22 +107,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        // cache speed before modifying
-        _originalMovementSpeed = _movementSpeed;
-
-        // force jump speed
-        _movementSpeed = 4f;
-
         _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-    }
-
-    private void RestoreMovementSpeed()
-    {
-        // restore speed only if it was changed
-        if (_movementSpeed == 4f)
-        {
-            _movementSpeed = _originalMovementSpeed;
-        }
     }
 
     private bool CanJump()
@@ -120,5 +115,5 @@ public class PlayerMovement : MonoBehaviour
         return _isGrounded || _playerSettingSO.WhatIsGround;
     }
 
-    public void SetMovementSpeed(float movementSpeed) => _movementSpeed = movementSpeed;
+    public void SetFriction(float friction) => _friction = friction;
 }
