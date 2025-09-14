@@ -7,4 +7,8 @@ public class NotEnoughMoneyToHireArtistAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.NotEnoughMoneyToHireArtist);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.NotEnoughMoneyToHireArtist);
+    }
 }

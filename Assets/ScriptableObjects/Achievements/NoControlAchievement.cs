@@ -7,4 +7,8 @@ public class NoControlAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.NoControl);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.NoControl);
+    }
 }

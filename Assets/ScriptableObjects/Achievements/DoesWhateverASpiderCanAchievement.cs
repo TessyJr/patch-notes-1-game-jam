@@ -7,4 +7,8 @@ public class DoesWhateverASpiderCanAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.DoesWhateverASpiderCan);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.DoesWhateverASpiderCan);
+    }
 }

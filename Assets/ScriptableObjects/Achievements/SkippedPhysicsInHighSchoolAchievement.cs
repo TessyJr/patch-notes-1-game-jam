@@ -7,4 +7,8 @@ public class SkippedPhysicsInHighSchoolAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.SkippedPhysicsInHighSchool);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.SkippedPhysicsInHighSchool);
+    }
 }

@@ -7,4 +7,8 @@ public class FastestManAliveAchievement : Achievement
     {
         SetIsUnlocked(achievementSO.FastestManAlive);
     }
+    void OnEnable()
+    {
+        SetIsUnlocked(achievementSO.FastestManAlive);
+    }
 }

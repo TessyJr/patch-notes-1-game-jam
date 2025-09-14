@@ -56,4 +56,29 @@ public class AchievementScriptableObject : ScriptableObject
     DoesWhateverASpiderCan &&
     YoureNotSupposedToGoThere &&
     RageQuitter;
+
+    public int AchievementsUnlockedCount
+    {
+        get
+        {
+            int count = 0;
+            if (FailedTheQC) count++;
+            if (AProperGame) count++;
+            if (NotEnoughMoneyToHireArtist) count++;
+            if (WhoNeedsPrecision) count++;
+            if (SkippedPhysicsInHighSchool) count++;
+            if (NotAGoodCameraman) count++;
+            if (PotatoPC) count++;
+            if (NoControl) count++;
+            if (SpeedRunner) count++;
+            if (GroundIsNotWhereIStand) count++;
+            if (FastestManAlive) count++;
+            if (BadGraphics) count++;
+            if (DoesWhateverASpiderCan) count++;
+            if (YoureNotSupposedToGoThere) count++;
+            if (RageQuitter) count++;
+            if (YouShouldNotMakeAGame) count++;
+            return count;
+        }
+    }
 }
