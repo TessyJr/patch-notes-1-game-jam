@@ -49,8 +49,6 @@ public class PlayerMovement : MonoBehaviour
         _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundLayer);
 
         _wasGrounded = _isGrounded;
-
-        Debug.Log(_isStickToWall);
     }
 
     private void FixedUpdate()
