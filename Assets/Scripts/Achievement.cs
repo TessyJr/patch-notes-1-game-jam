@@ -16,5 +16,5 @@ public abstract class Achievement : ScriptableObject
     public string GetDescription => description;
     public Sprite GetIcon => icon;
     public string GetClueText => clueText;
-
+    public abstract void Unlock();
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class BadGraphicsAchievement : Achievement
 {
     [SerializeField] private AchievementScriptableObject achievementSO;
-    void OnEnable()
+    public override void Unlock()
     {
         SetIsUnlocked(achievementSO.BadGraphics);
     }
