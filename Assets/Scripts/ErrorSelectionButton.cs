@@ -15,6 +15,11 @@ public class ErrorSelectionButton : MonoBehaviour
     [SerializeField] private TextMeshProUGUI errorText;
     [SerializeField] private TextMeshProUGUI playerLimitText;
     [SerializeField] private TextMeshProUGUI worldLimitText;
+    private Button button;
+    void Start()
+    {
+        button = GetComponent<Button>();
+    }
     public void ToggleSelection()
     {
         if (isWorldError && menuManager.GetSelectedWorldErrorCount() >= 3 && !isSelected)
@@ -22,7 +27,13 @@ public class ErrorSelectionButton : MonoBehaviour
         if (!isWorldError && menuManager.GetSelectedPlayerErrorCount() >= 3 && !isSelected)
             return;
         isSelected = !isSelected;
-        backgroundImage.color = isSelected ? Color.black : Color.white;
+        errorText.color = isSelected ? Color.white : Color.black;
+        var buttonColorBlock = button.colors;
+        buttonColorBlock.normalColor = isSelected ? Color.black : Color.white;
+        buttonColorBlock.selectedColor = isSelected ? new Color32(0x96, 0xA4, 0x30, 0xFF) : new Color32(0xEA, 0xFF, 0x53, 0xFF);
+        button.colors = buttonColorBlock;
+
+        backgroundImage.color = isSelected ? new Color32(0x96, 0xA4, 0x30, 0xFF) : Color.white;
         errorText.color = isSelected ? Color.white : Color.black;
         if (isWorldError)
         {
