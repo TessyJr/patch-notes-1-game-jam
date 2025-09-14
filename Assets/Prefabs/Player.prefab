@@ -385,7 +385,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _wallCheck: {fileID: 8437957437136264002}
-  _wallCheckRadius: 0.7
+  _wallCheckRadius: 0.76
   _wallLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -418,6 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneGameManager: {fileID: 0}
+  _counterSO: {fileID: 0}
   restartDelay: 1
   _playerDeathPrefab: {fileID: 7481308742861255197, guid: 38f276e33e276411c8499e488faf8474, type: 3}
 --- !u!114 &3755205288005450853
@@ -434,12 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _reachGoalCanvasManager: {fileID: 0}
   _sceneGameManager: {fileID: 0}
-  _playerInputActionMap:
-    m_Name: Player Input
-    m_Id: 9f74b5a8-b00b-48f7-9234-af5aa4a32b27
-    m_Asset: {fileID: 0}
-    m_Actions: []
-    m_Bindings: []
+  _playerInput: {fileID: 0}
 --- !u!114 &2051296284593821627
 MonoBehaviour:
   m_ObjectHideFlags: 0

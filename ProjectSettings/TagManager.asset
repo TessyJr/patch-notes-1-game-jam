@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - Wall
   - Goal
+  - WorldLimit
   layers:
   - Default
   - TransparentFX
