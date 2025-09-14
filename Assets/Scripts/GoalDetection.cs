@@ -11,7 +11,8 @@ public class GoalDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Goal"))
         {
-            _playerInput.enabled = false;
+            _playerInput.actions.Disable();
+
             _reachGoalCanvasManager.OpenCanvas();
             _sceneGameManager.ReachGoal();
         }
