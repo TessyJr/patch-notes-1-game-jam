@@ -1004,6 +1004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921359975}
   - component: {fileID: 921359974}
+  - component: {fileID: 921359976}
   m_Layer: 0
   m_Name: ErrorManager
   m_TagString: Untagged
@@ -1069,6 +1070,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921359976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921359973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05f2e91d00eb4521b6b859632f49a0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerSettingSO: {fileID: 11400000, guid: bdb9ea5e5e58c4b99af9d749ae10063e, type: 2}
+  _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
 --- !u!1 &1110790063
 GameObject:
   m_ObjectHideFlags: 0
