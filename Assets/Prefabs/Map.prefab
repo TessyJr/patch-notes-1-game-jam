@@ -380,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 2934310877404376992}
   _spriteRenderer: {fileID: 0}
+  _animator: {fileID: 0}
   _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _sprite: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
@@ -5608,6 +5609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 1296795532204584931}
   _spriteRenderer: {fileID: 0}
+  _animator: {fileID: 0}
   _noMaterialTile: {fileID: 0}
   _sprite: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
@@ -5747,6 +5749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 0}
   _spriteRenderer: {fileID: 9020536285254766846}
+  _animator: {fileID: 3199472311476566892}
   _noMaterialTile: {fileID: 0}
   _sprite: {fileID: 21300000, guid: 779b11dc3fa9b4a91a556cb509adedf0, type: 3}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
@@ -6904,6 +6907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 7474989102650242341}
   _spriteRenderer: {fileID: 0}
+  _animator: {fileID: 0}
   _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _sprite: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
@@ -7478,6 +7482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 3568691368296195722}
   _spriteRenderer: {fileID: 0}
+  _animator: {fileID: 0}
   _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _sprite: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
@@ -7890,6 +7895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 2257446902134095213}
   _spriteRenderer: {fileID: 0}
+  _animator: {fileID: 0}
   _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _sprite: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}
@@ -9125,6 +9131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilemap: {fileID: 8381610024870605277}
   _spriteRenderer: {fileID: 0}
+  _animator: {fileID: 0}
   _noMaterialTile: {fileID: 11400000, guid: ef857268586c44ecfa6e0250f7ca0a4e, type: 2}
   _sprite: {fileID: 0}
   _worldSettingSO: {fileID: 11400000, guid: 3c8b094dbf3f34d2fa93f96be0e93627, type: 2}

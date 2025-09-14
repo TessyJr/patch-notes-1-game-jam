@@ -5,6 +5,7 @@ public class WorldMaterialChanger : MonoBehaviour
 {
     [SerializeField] private Tilemap _tilemap;
     [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private Animator _animator;
     [SerializeField] private TileBase _noMaterialTile;
     [SerializeField] private Sprite _sprite;
     [SerializeField] private WorldSettingScriptableObject _worldSettingSO;
@@ -15,6 +16,8 @@ public class WorldMaterialChanger : MonoBehaviour
             if (_spriteRenderer != null)
             {
                 _spriteRenderer.color = new(1, 0, 1, 1);
+
+                if (_animator && _worldSettingSO.GlitchyWorld == false) _animator.enabled = false;
 
                 if (_sprite && _worldSettingSO.GlitchyWorld == false) _spriteRenderer.sprite = _sprite;
             }
