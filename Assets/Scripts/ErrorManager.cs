@@ -9,6 +9,7 @@ public class ErrorManager : MonoBehaviour
 {
     [Header("Scriptable Object Settings")]
     [SerializeField] private WorldSettingScriptableObject _worldSettingSO;
+    [SerializeField] private AchievementDetectionController _achivementDetectionController;
 
     [Header("FPS Drop Error Settings")]
     [SerializeField] private float frameDropInterval = 1f;
@@ -128,6 +129,9 @@ public class ErrorManager : MonoBehaviour
             yield return new WaitForSeconds(qualityStepInterval);
 
             currentScale -= qualityStepAmount;
+
+            _achivementDetectionController.CheckBadGraphics(currentScale);
+            
             SetRenderScale(currentScale);
         }
     }
