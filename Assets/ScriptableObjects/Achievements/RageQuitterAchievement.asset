@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: RageQuitterAchievement
   m_EditorClassIdentifier: 
   achievementName: Rage Quitter
-  description: Quit the level after replaying 3 times
-  clueText: "Again, again, and again\u2026 and that\u2019s it!"
+  description: Quit the level after dying at least once
+  clueText: One is plenty, I've had enough!
   isUnlocked: 0
   icon: {fileID: -798109635, guid: e5dd2a9fe43db46f4b52e6c4fab7b518, type: 3}
   achievementSO: {fileID: 11400000, guid: d3f2d1cec5d354d53b1907e57f723c50, type: 2}

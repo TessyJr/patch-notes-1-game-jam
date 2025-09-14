@@ -9,7 +9,7 @@ public class AchievementItem : MonoBehaviour
     void Start()
     {
         iconImage.sprite = achievementSO.GetIcon;
-        iconImage.color = achievementSO.GetIsUnlocked ? Color.white : Color.black;
+        iconImage.color = achievementSO.GetIsUnlocked ? Color.white : new Color(0.25f, 0.25f, 0.25f);
     }
     public Achievement GetAchievementSO => achievementSO;
     public void SetIconImageColor(Color color) => iconImage.color = color;
