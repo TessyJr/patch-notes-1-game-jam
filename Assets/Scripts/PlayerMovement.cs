@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _movementSpeed = 4f;
     [SerializeField] private float _jumpForce = 8f;
     [SerializeField] private Transform _groundCheck;
-    [SerializeField] private float _groundCheckRadius = 0.2f;
+    [SerializeField] private float _groundCheckRadius = 0.4f;
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private PlayerSettingScriptableObject _playerSettingSO;
 
