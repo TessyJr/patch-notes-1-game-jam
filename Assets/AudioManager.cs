@@ -11,6 +11,14 @@ public class AudioManager : MonoBehaviour
     [Header("BGM Audio Clips")]
     public AudioClip GameBGM;
 
+    [Header("SFX Audio Clips")]
+    public AudioClip UISFX;
+    public AudioClip WinSFX;
+
+    [Header("Player SFX Audio Clips")]
+    public AudioClip PlayerJumpSFX;
+    public AudioClip PlayerDieSFX;
+
     private void Awake()
     {
         if (Instance == null)
