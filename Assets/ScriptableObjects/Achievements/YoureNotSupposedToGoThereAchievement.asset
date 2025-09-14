@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052e26f1872034707949715c1f94ab87, type: 3}
   m_Name: YoureNotSupposedToGoThereAchievement
   m_EditorClassIdentifier: 
-  achievementName: "You\u2019re Not Supposed To Go There!"
+  achievementName: "you\u2019re Not Supposed To Go There!"
   description: Go outside the level
   clueText: "There should\u2019ve been a barrier to prevent any access\u2026 yet
     here I am."

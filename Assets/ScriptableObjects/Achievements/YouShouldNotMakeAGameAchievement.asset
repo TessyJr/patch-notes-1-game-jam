@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4177dd9579d84e2bac9892c30e2397e, type: 3}
   m_Name: YouShouldNotMakeAGameAchievement
   m_EditorClassIdentifier: 
-  achievementName: "You Shouldn\u2019t Make A Game"
+  achievementName: "you Shouldn\u2019t Make A Game"
   description: Unlock every achievements
   clueText: Looks like I broke every rule that exists.
   isUnlocked: 0
