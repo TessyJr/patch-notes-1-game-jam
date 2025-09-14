@@ -287,6 +287,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7597703214769779625, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597703214769779625, guid: e9d4788143a4f4453bd6da33a0ad378f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -13817,6 +13821,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7179779603551399565, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
+      propertyPath: _playerSettingsSO
+      value: 
+      objectReference: {fileID: 11400000, guid: bdb9ea5e5e58c4b99af9d749ae10063e, type: 2}
+    - target: {fileID: 7179779603551399565, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
+      propertyPath: _playerBuggedAnimatorController
+      value: 
+      objectReference: {fileID: 9100000, guid: cea5846826a204c7ab7430ff8e191be0, type: 2}
     - target: {fileID: 7481308742861255197, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
       propertyPath: m_Name
       value: Player
@@ -13836,7 +13848,7 @@ PrefabInstance:
     - target: {fileID: 8090628776161540284, guid: eb8859e5c64314c898f1286bddc1df04, type: 3}
       propertyPath: _achievementDetectionController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 490525323}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

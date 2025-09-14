@@ -95,10 +95,6 @@ public class ErrorManager : MonoBehaviour
         {
             StartCoroutine(InconsistentFrictionRoutine());
         }
-        else
-        {
-            // phyiscsMaterial.Speed = 0f;
-        }
     }
 
     private IEnumerator FrameDropRoutine()
