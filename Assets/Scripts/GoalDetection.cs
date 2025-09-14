@@ -17,6 +17,8 @@ public class GoalDetection : MonoBehaviour
 
             _reachGoalCanvasManager.OpenCanvas();
             _sceneGameManager.ReachGoal();
+
+            collision.transform.tag = "Untagged";
         }
     }
 }
