@@ -56,11 +56,15 @@ public class PlatformController : MonoBehaviour
         }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.transform.parent = null;
+            if (collision.transform != null && collision.transform.parent == transform)
+            {
+                if (!gameObject.activeInHierarchy) return; // don’t bother while shutting down
+                collision.transform.SetParent(null);
+            }
         }
     }
 }
