@@ -99,6 +99,8 @@ public class ErrorManager : MonoBehaviour
 
     private IEnumerator FrameDropRoutine()
     {
+        QualitySettings.vSyncCount = 0; // make sure vsync isn't interfering
+
         while (_worldSettingSO.FPSDrop)
         {
             yield return new WaitForSeconds(frameDropInterval);
