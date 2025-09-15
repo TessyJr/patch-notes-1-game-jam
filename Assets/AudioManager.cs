@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip UISFX;
     public AudioClip WinSFX;
     public AudioClip ACchievementSFX;
+    public AudioClip SelectSFX;
 
     [Header("Player SFX Audio Clips")]
     public AudioClip PlayerJumpSFX;
