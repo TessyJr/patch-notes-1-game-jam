@@ -405,6 +405,8 @@ MonoBehaviour:
   _animator: {fileID: 6217628031114898848}
   _sprite: {fileID: 7225283163248167059}
   _movement: {fileID: 6124308607639782869}
+  _playerSettingsSO: {fileID: 11400000, guid: bdb9ea5e5e58c4b99af9d749ae10063e, type: 2}
+  _playerBuggedAnimatorController: {fileID: 9100000, guid: cea5846826a204c7ab7430ff8e191be0, type: 2}
 --- !u!114 &8090628776161540284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneGameManager: {fileID: 0}
   _counterSO: {fileID: 0}
+  _achievementDetectionController: {fileID: 0}
   restartDelay: 1
   _playerDeathPrefab: {fileID: 7481308742861255197, guid: 38f276e33e276411c8499e488faf8474, type: 3}
 --- !u!114 &3755205288005450853

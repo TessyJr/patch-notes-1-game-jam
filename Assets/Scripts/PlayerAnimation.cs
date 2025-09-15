@@ -1,4 +1,3 @@
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
@@ -10,7 +9,7 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] private PlayerSettingScriptableObject _playerSettingsSO;
 
     [Header("Wrong Animation Error Settings")]
-    [SerializeField] private AnimatorController _playerBuggedAnimatorController;
+    [SerializeField] private RuntimeAnimatorController _playerBuggedAnimatorController;
 
     private bool _wasGrounded = false;
     private bool _facingRight = true;
