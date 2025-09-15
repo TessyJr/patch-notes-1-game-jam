@@ -9,6 +9,7 @@ public class PopupManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _achievementName;
     [SerializeField] private Image _iconImage;
     [SerializeField] Animator _animator;
+    [SerializeField] private AudioSource _audioSource;
 
     private Queue<(string name, Sprite icon)> _popupQueue = new Queue<(string, Sprite)>();
     private bool _isShowing = false;
@@ -31,9 +32,10 @@ public class PopupManager : MonoBehaviour
             _achievementName.text = popup.name;
             _iconImage.sprite = popup.icon;
             _animator.SetTrigger("Pop");
-
+            yield return new WaitForSeconds(1f); // Slight delay to ensure animation starts
+            _audioSource.Play();
             // Wait for animation to finish (adjust duration as needed)
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(3f);
         }
         _isShowing = false;
     }
