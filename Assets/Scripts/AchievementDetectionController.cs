@@ -143,8 +143,6 @@ public class AchievementDetectionController : MonoBehaviour
 
         float elapsed = Time.time - _sceneStartTime;
 
-        Debug.Log(elapsed);
-
         if (elapsed <= 5f)
         {
             _achivementSO.SpeedRunner = true;
@@ -183,7 +181,9 @@ public class AchievementDetectionController : MonoBehaviour
 
         if (!_playerMovement) return;
 
-        if (_playerMovement.GetMovementSpeed() >= 100f)
+        Debug.Log(_playerMovement.GetMovementSpeed());
+
+        if (_playerMovement.GetMovementSpeed() >= 50f)
         {
             _achivementSO.FastestManAlive = true;
             Achievement achievement = _achievements.Find(a => a.name == "FastestManAliveAchievement");
