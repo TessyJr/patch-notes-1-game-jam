@@ -181,8 +181,6 @@ public class AchievementDetectionController : MonoBehaviour
 
         if (!_playerMovement) return;
 
-        Debug.Log(_playerMovement.GetMovementSpeed());
-
         if (_playerMovement.GetMovementSpeed() >= 50f)
         {
             _achivementSO.FastestManAlive = true;
