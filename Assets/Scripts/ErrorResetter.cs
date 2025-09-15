@@ -11,5 +11,7 @@ public class ErrorResetter : MonoBehaviour
     {
         _playerSettingSO.Reset();
         _worldSettingSO.Reset();
+        
+        QualitySettings.vSyncCount = 1;
     }
 }
