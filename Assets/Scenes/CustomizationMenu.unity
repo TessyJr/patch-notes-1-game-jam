@@ -12135,7 +12135,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Turns every object into a default checkerboard/placeholder square.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: 1706670525, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!114 &322734175616569310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12158,7 +12158,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Players can jump infinitely midair.
-  icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  icon: {fileID: 1835698923, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!114 &324146749812461210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12451,7 +12451,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Collision boxes are shifted, making jumps and landings unpredictable.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: -471216605, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!1 &523327541776797830
 GameObject:
   m_ObjectHideFlags: 0
@@ -12646,7 +12646,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: The graphic quality lowers overtime.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: -982572681, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!222 &640170585342147890
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12703,7 +12703,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Controls are swapped.
-  icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  icon: {fileID: 2012795071, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!222 &779554015534313107
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12891,7 +12891,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: The camera constantly shakes uncontrollably.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: 543200421, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!114 &1341860706939048869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13294,7 +13294,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Any obstacle that collides with the player launches off uncontrollably.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: 701099910, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!1 &1756175221516826714
 GameObject:
   m_ObjectHideFlags: 0
@@ -13338,7 +13338,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Gravity direction and strength change every 3 seconds.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: -1089973510, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!222 &1788904855754952947
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13819,7 +13819,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: The game lags continuously.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: -1821386831, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!224 &2395745814450452937
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13861,7 +13861,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: The collision box is offset from the sprite, making hits/misses unpredictable.
-  icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  icon: {fileID: 783840640, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!114 &2454263368730947237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15960,7 +15960,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Every player input is delayed by 1 second.
-  icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  icon: {fileID: 468832149, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!222 &5400790484956427088
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16465,14 +16465,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1334512412, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16676,7 +16676,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Always plays the wrong animation for any action.
-  icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  icon: {fileID: 490393939, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!114 &6349435523859377749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16904,7 +16904,7 @@ MonoBehaviour:
   worldLimitText: {fileID: 5609257188493374368}
   description: "Each tile gets a random friction value \u2192 some are super slippery,
     others are sticky."
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: 1898909526, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!1 &6557017016826231525
 GameObject:
   m_ObjectHideFlags: 0
@@ -16945,7 +16945,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: The player's speed keeps accelerating over time uncontrollably.
-  icon: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  icon: {fileID: -1022216902, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!114 &6618760137642301104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16968,7 +16968,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: Lights flicker on/off like a nightclub.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: 18011473, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!114 &6626901616409942325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17340,7 +17340,7 @@ MonoBehaviour:
   playerLimitText: {fileID: 8001819076605900704}
   worldLimitText: {fileID: 5609257188493374368}
   description: The world constantly flickers, stretches, or distorts.
-  icon: {fileID: -1869290018219920624, guid: 3421078018dc3934a8c1ab3b7bf89aa0, type: 3}
+  icon: {fileID: 1334512412, guid: f39acd17f915f4dcf88b658a876d476a, type: 3}
 --- !u!222 &7017852307752343352
 CanvasRenderer:
   m_ObjectHideFlags: 0
