@@ -504,7 +504,6 @@ GameObject:
   - component: {fileID: 500435590}
   - component: {fileID: 500435593}
   - component: {fileID: 500435594}
-  - component: {fileID: 500435595}
   - component: {fileID: 500435596}
   m_Layer: 5
   m_Name: Button
@@ -674,35 +673,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &500435595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500435588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 9
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 500435596}
-          m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-          m_MethodName: PlaySound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &500435596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,7 +1917,6 @@ GameObject:
   - component: {fileID: 1322345888}
   - component: {fileID: 1322345887}
   - component: {fileID: 1322345893}
-  - component: {fileID: 1322345892}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -2116,35 +2085,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322345885}
   m_CullTransparentMesh: 1
---- !u!114 &1322345892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322345885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 9
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 500435596}
-          m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-          m_MethodName: PlaySound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1322345893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,7 +2112,6 @@ GameObject:
   - component: {fileID: 1390147422}
   - component: {fileID: 1390147427}
   - component: {fileID: 1390147429}
-  - component: {fileID: 1390147428}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -2339,35 +2278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abfa5ae4f25a4631b8c03ef1f52a927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1390147428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390147420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 9
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 500435596}
-          m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-          m_MethodName: PlaySound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1390147429
 MonoBehaviour:
   m_ObjectHideFlags: 0
