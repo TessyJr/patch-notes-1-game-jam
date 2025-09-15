@@ -46,7 +46,7 @@ public class AchievementDetectionController : MonoBehaviour
     {
         if (_achivementSO.AProperGame) return;
 
-        if (!_playerSettingSO.HasAny && !_playerSettingSO.HasAny)
+        if (!_worldSettingSO.HasAny && !_playerSettingSO.HasAny)
         {
             _achivementSO.AProperGame = true;
             Achievement achievement = _achievements.Find(a => a.name == "AProperGameAchievement");

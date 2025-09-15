@@ -16,7 +16,7 @@ MonoBehaviour:
   PhysicsGoneWild: 0
   UnsteadyHands: 0
   InconsistentFriction: 0
-  FPSDrop: 0
+  FPSDrop: 1
   WrongOffset: 0
   GravityFlip: 0
   LightingIssue: 0
